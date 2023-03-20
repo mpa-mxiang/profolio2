@@ -52,11 +52,11 @@ header {
 header h1 {
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 6vw;
     display: flex;
-    gap: 200px;
+    gap: 54vw;
     align-items: center;
-    margin-left: 15px;
+    padding: 1.5vw;
 }
 
 /* intro */
