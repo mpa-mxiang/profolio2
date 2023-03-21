@@ -21,10 +21,6 @@ hr {
   border: 1px solid #212121;
 }
 
-img {
-  width: 100%;
-}
-
 /* header  */
 header {
   background: #3c3a39;
@@ -41,6 +37,10 @@ header h1 {
   gap: 200px;
   align-items: center;
   margin-left: 15px;
+}
+
+header img {
+  padding-left: 57vw;
 }
 
 /* intro */
