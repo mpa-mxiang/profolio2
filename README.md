@@ -26,7 +26,7 @@
 
 # 📖 **Personal-Profolio** <a name="about-project"></a>
 
-**Personal-Profolio. Jiachun Xiang** In this project, I used the tools like linter, HTML/CSS I learned from provided tutorial to build the toolbar and the headline section for my personal profolio. Also, a Figma template is used.
+This is a project that build with the checking tool linter, language HTML and CSS to have the header bar and the intro section as the part of the profolio in the mobile section.
 
 
 ## 🛠 Built With <a name="VS Code">VS Code</a>
