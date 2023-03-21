@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crete Round&display=swap');
+
 *,
 *::after,
 *::before {
@@ -50,7 +54,7 @@ header img {
   background-image: url("./img/intro-mobile.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  height: 167vh;
+  height: 156vh;
   display: flex;
   flex-direction: column;
   top: 92px;
@@ -61,24 +65,24 @@ header img {
   color: #ff6800;
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
-  font-size: 15vw;
+  font-size: 12vw;
+  padding-right: 24vw;
   align-self: center;
 }
 
 #intro h2 {
   color: #fff5e1;
   font-family: 'Roboto', sans-serif;
-  padding-left: 5vw;
   margin-top: -6vw;
 }
 
 #intro p {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  padding-left: 5vw;
-  margin-top: 1vw;
+  width: 72vw;
 }
 
 #intro ul {
-  margin-left: -8vw;
+  margin-left: -9vw;
+  margin-top: 1vw;
 }
