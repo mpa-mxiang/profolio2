@@ -26,16 +26,15 @@ button {
   background: #ff6b00;
   color: #fff;
   font-family: "Inter", sans-serif;
-  padding: 12px;
+  padding: 1em;
+  white-space: nowrap;
   width: 37%;
-  height: 12vh;
+  height: 9vh;
   letter-spacing: 0.03em;
   font-weight: 700;
   display: flex;
-  line-height: 24px;
   align-items: center;
   border: 0;
-  margin-bottom: -22px;
 }
 
 hr {
@@ -58,7 +57,7 @@ header h1 {
   display: flex;
   gap: 200px;
   align-items: center;
-  margin-left: 15px;
+  margin-left: 1.5em;
 }
 
 header img {
@@ -79,6 +78,21 @@ header img {
   padding: 5rem 1rem;
 }
 
+.about .brief h1 {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  text-align: center;
+  padding: 1vh 9vw;
+}
+
+.about .list:last-child h1 {
+  padding-left: 34vw;
+}
+
 #intro h1 {
   color: #ff6800;
   font-family: "Crete Round", sans-serif;
@@ -94,10 +108,30 @@ header img {
   margin-top: -6vw;
 }
 
+.about .brief p {
+  width: 327px;
+  height: 148px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  padding: 1vh 9vw;
+}
+
 #intro p {
   color: #fff;
   font-family: "Poppins", sans-serif;
   margin-top: -3vw;
+}
+
+.about .list ul {
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10rem;
 }
 
 #intro ul {
@@ -115,7 +149,7 @@ header img {
 }
 
 #works h1 {
-  font-family: "Crete Round",sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
@@ -143,8 +177,15 @@ header img {
 }
 
 #top-work ul {
-  padding: 0px;
+  margin-left: -12vw;
   gap: 12px;
+}
+
+.about .list ul li {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  line-height: 194%;
 }
 
 #top-work ul li {
@@ -161,48 +202,57 @@ header img {
   margin-bottom: 24px;
 }
 
-#works #special h1, 
+.about .list img {
+  width: fit-content;
+}
+
+#works #special img,
+#works #normal img {
+  width: 100%;
+}
+
+#works #special h1,
 #works #normal h1 {
   position: absolute;
-  top: 84px;
+  top: 12.3%;
   left: 16px;
   color: white;
-  font-size: 24px;
   width: 95%;
   height: 81px;
-  font-family: 'Crete Round',sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-size: 32px;
   line-height: 44px;
 }
 
-#works #special p, 
+#works #special p,
 #works #normal p {
   position: absolute;
-  top: 180px;
+  top: 42%;
   left: 16px;
   color: white;
-  font-size: 16px;
+  font-size: 4.8vw;
   height: 87px;
-  font-family: 'Crete Round',sans-serif;
+  font-family: 'Crete Round', sans-serif;
   line-height: 24px;
+  width: 90%;
 }
 
-#works #special ul, 
+#works #special ul,
 #works #normal ul {
   position: absolute;
-  bottom: 50px;
+  bottom: 15%;
   left: 16px;
   padding: 0;
 }
 
-#works #special ul li, 
+#works #special ul li,
 #works #normal ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -210,15 +260,25 @@ header img {
   line-height: 20px;
 }
 
-#works #special button, 
+.about .brief button {
+  margin-left: 1.8rem;
+  width: 42vw;
+  height: 7.8vh;
+  margin-top: 4.5em;
+}
+
+#works #special button,
 #works #normal button {
   position: absolute;
-  bottom: 4px;
+  bottom: 1.5%;
   width: 100%;
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 12px 113.5px;
+  padding: 1.2em 9em;
+  white-space: nowrap;
+  margin-bottom: -1.8em;
+  font-size: 4.2vw;
 }
 
 #works #normal:last-child {
@@ -227,7 +287,7 @@ header img {
 
 /* about */
 .about {
-  background: #1C1A19;
+  background: #1c1a19;
   position: absolute;
   width: 100%;
 }
@@ -236,76 +296,9 @@ header img {
   background-image: url("./img/illustration-about-me-mobile.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  height: 167vh;
-}
-
-.about .brief h1 {
-  font-family: 'Crete Round',sans-serif;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
-  text-align: center;
-  padding: 0vw 9vw;
-}
-
-.about .brief p {
-  width: 327px;
-  height: 148px;
-  font-family: 'Inter',sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #F4F5F7;
-  padding: 0vw 9vw;
-}
-
-.about .brief button {
-  margin-left: 1.75rem;
-  width: 41vw;
-  height: 13.8vh;
-  margin-bottom: 20rem;
+  height: 84vh;
 }
 
 .about hr {
   border: 1px solid #fff;
-}
-
-.about .list h1 {
-  font-family: 'InaiMathi',sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 138%;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  gap: 12px;
-  padding: 74.77px;
-  margin: 0;
-}
-
-.about .list:last-child h1 {
-  padding-left: 34vw;
-}
-
-.about .list img {
-  width: fit-content;
-}
-
-.about .list ul {
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10rem;
-}
-
-.about .list ul li {
-  color: #fff;
-  font-family: 'Inter',sans-serif;
-  font-size: 22px;
-  line-height: 194%;
 }
