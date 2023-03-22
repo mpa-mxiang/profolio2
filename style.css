@@ -53,14 +53,12 @@ button:disabled {
   font-family: "inter", sans-serif;
   padding: 12px;
   width: 37%;
-  height: 12vh;
+  height: 9vh;
   letter-spacing: 0.03em;
   font-weight: 700;
   display: flex;
-  line-height: 24px;
   align-items: center;
   border: 0;
-  margin-bottom: -22px;
 }
 
 hr {
@@ -132,6 +130,10 @@ header img {
   padding-left: 3em;
 }
 
+.about .list:last-child h1 {
+  padding-left: 34vw;
+}
+
 #intro h1 {
   color: #ff6800;
   font-family: "Crete Round", sans-serif;
@@ -174,6 +176,7 @@ header img {
 
 .about .list:last-child ul {
   margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 
 #intro ul {
@@ -246,6 +249,7 @@ header img {
 
 .about .list img {
   width: unset;
+  width: fit-content;
 }
 
 #works #special img,
@@ -264,16 +268,15 @@ header img {
   font-family: 'Crete Round', sans-serif;
 }
 
-#works #special h1, 
+#works #special h1,
 #works #normal h1 {
   position: absolute;
-  top: 84px;
+  top: 12.3%;
   left: 16px;
   color: white;
-  font-size: 24px;
   width: 95%;
   height: 81px;
-  font-family: 'Crete Round',sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-size: 32px;
   line-height: 44px;
 }
@@ -297,28 +300,29 @@ header img {
   bottom: 15%;
 }
 
-#works #special p, 
+#works #special p,
 #works #normal p {
   position: absolute;
-  top: 180px;
+  top: 42%;
   left: 16px;
   color: white;
-  font-size: 16px;
+  font-size: 4.8vw;
   height: 87px;
-  font-family: 'Crete Round',sans-serif;
+  font-family: 'Crete Round', sans-serif;
   line-height: 24px;
+  width: 90%;
 }
 
-#works #special ul, 
+#works #special ul,
 #works #normal ul {
   position: absolute;
-  bottom: 50px;
+  bottom: 15%;
   left: 16px;
   padding: 0;
 }
 
 #works #special ul li,
-#works #special ul li, 
+#works #special ul li,
 #works #normal ul li {
   display: flex;
   flex-direction: row;
@@ -348,10 +352,10 @@ header img {
   bottom: 1.5%;
 }
 
-#works #special button, 
+#works #special button,
 #works #normal button {
   position: absolute;
-  bottom: 4px;
+  bottom: 1.5%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -361,6 +365,10 @@ header img {
   margin-bottom: -1.8em;
   font-size: 6vw;
   padding: 12px 113.5px;
+  padding: 1.2em 9em;
+  white-space: nowrap;
+  margin-bottom: -1.8em;
+  font-size: 4.2vw;
 }
 
 #works #normal:last-child {
@@ -418,41 +426,4 @@ header img {
 
 .about hr {
   border: 1px solid #fff;
-}
-
-.about .list h1 {
-  font-family: 'InaiMathi',sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 138%;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  gap: 12px;
-  padding: 74.77px;
-  margin: 0;
-}
-
-.about .list:last-child h1 {
-  padding-left: 34vw;
-}
-
-.about .list img {
-  width: fit-content;
-}
-
-.about .list ul {
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10rem;
-}
-
-.about .list ul li {
-  color: #fff;
-  font-family: 'Inter',sans-serif;
-  font-size: 22px;
-  line-height: 194%;
 }
