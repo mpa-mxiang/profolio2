@@ -45,6 +45,7 @@ header h1 {
 
 header img {
   padding-left: 57vw;
+  padding-top: 1vw;
 }
 
 /* intro */
@@ -54,7 +55,7 @@ header img {
   background-image: url("./img/intro-mobile.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  height: 156vh;
+  height: 147vh;
   display: flex;
   flex-direction: column;
   top: 92px;
@@ -80,6 +81,7 @@ header img {
   color: #fff;
   font-family: "Poppins", sans-serif;
   width: 72vw;
+  margin-top: -3vw;
 }
 
 #intro ul {
