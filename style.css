@@ -55,11 +55,11 @@ header img {
   background-image: url("./img/intro-mobile.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   top: 92px;
-  padding: 0rem 1rem;
+  padding: 5rem 1rem;
 }
 
 #intro h1 {
