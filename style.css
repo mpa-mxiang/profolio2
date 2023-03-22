@@ -55,11 +55,11 @@ header img {
   background-image: url("./img/intro-mobile.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  height: 147vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   top: 92px;
-  padding: 120px 24px;
+  padding: 1rem 1rem;
 }
 
 #intro h1 {
@@ -67,7 +67,7 @@ header img {
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
   font-size: 12vw;
-  padding-right: 24vw;
+  padding-right: 29.1vw;
   align-self: center;
 }
 
@@ -80,7 +80,6 @@ header img {
 #intro p {
   color: #fff;
   font-family: "Poppins", sans-serif;
-  width: 72vw;
   margin-top: -3vw;
 }
 
