@@ -53,8 +53,7 @@ header img {
   background: #1c1a19;
   width: 100%;
   background-image: url("./img/intro-mobile.png");
-  background-position-x:right;
-  background-position-y: bottom;
+  background-position: right bottom;
   background-repeat: no-repeat;
   height: 136.2vh;
   display: flex;
