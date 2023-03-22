@@ -50,6 +50,17 @@ button:active {
 button:disabled {
   color: #f4f1f0;
   background: #5b5957;
+  font-family: "inter", sans-serif;
+  padding: 12px;
+  width: 37%;
+  height: 12vh;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  display: flex;
+  line-height: 24px;
+  align-items: center;
+  border: 0;
+  margin-bottom: -22px;
 }
 
 hr {
