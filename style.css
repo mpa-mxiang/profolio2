@@ -442,7 +442,3 @@ header img {
 .about hr {
   border: 1px solid #fff;
 }
-
-.about .list:last-child ul {
-  margin-bottom: 6rem;
-}
