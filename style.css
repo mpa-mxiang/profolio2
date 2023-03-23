@@ -362,15 +362,12 @@ header img {
   height: 7.8vh;
   margin-top: 4.5em;
   font-size: 4.2vw;
-<<<<<<< HEAD
 }
 
 #works #special button,
 #works #normal button {
   position: absolute;
   bottom: 1.5%;
-=======
->>>>>>> 3fd6cd3 (modify buttons and text)
 }
 
 #works #special button,
@@ -382,14 +379,11 @@ header img {
   align-items: center;
   text-align: center;
   padding: 1em 5em;
-<<<<<<< HEAD
   white-space: nowrap;
   margin-bottom: -1.8em;
   font-size: 6vw;
   padding: 12px 113.5px;
   padding: 1.2em 9em;
-=======
->>>>>>> 3fd6cd3 (modify buttons and text)
   white-space: nowrap;
   margin-bottom: -1.8em;
   font-size: 6vw;
@@ -405,9 +399,6 @@ header img {
   position: absolute;
   width: 100%;
   margin-bottom: 1rem;
-  background: #1C1A19;
-  position: absolute;
-  width: 100%;
 }
 
 .about .brief {
@@ -450,4 +441,8 @@ header img {
 
 .about hr {
   border: 1px solid #fff;
+}
+
+.about .list:last-child ul {
+  margin-bottom: 6rem;
 }
