@@ -318,6 +318,7 @@ header img {
   background: #1c1a19;
   position: absolute;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .about .brief {
@@ -329,4 +330,8 @@ header img {
 
 .about hr {
   border: 1px solid #fff;
+}
+
+.about .list:last-child ul {
+  margin-bottom: 6rem;
 }
