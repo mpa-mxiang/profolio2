@@ -29,33 +29,6 @@ button {
   padding: 1em;
   white-space: nowrap;
   width: 8em;
-<<<<<<< HEAD
-  height: 9vh;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  border: 0;
-}
-
-button:hover {
-  color: #f55800;
-  background: #fff5e1;
-}
-
-button:active {
-  color: #f4f1f0;
-  background: #e05304;
-}
-
-button:disabled {
-  color: #f4f1f0;
-  background: #5b5957;
-  font-family: "inter", sans-serif;
-  padding: 12px;
-  width: 37%;
-=======
->>>>>>> 3fd6cd3 (modify buttons and text)
   height: 9vh;
   letter-spacing: 0.03em;
   font-weight: 700;
@@ -148,10 +121,6 @@ header img {
   padding-left: 3em;
 }
 
-.about .list:last-child h1 {
-  padding-left: 3em;
-}
-
 #intro h1 {
   color: #ff6800;
   font-family: "Crete Round", sans-serif;
@@ -194,7 +163,6 @@ header img {
 
 .about .list:last-child ul {
   margin-bottom: 6rem;
-  margin-bottom: 10rem;
 }
 
 #intro ul {
@@ -267,23 +235,11 @@ header img {
 
 .about .list img {
   width: unset;
-  width: fit-content;
 }
 
 #works #special img,
 #works #normal img {
   width: 100%;
-}
-
-#works #special h1,
-#works #normal h1 {
-  position: absolute;
-  top: 12.3%;
-  left: 16px;
-  color: white;
-  width: 95%;
-  height: 81px;
-  font-family: 'Crete Round', sans-serif;
 }
 
 #works #special h1,
@@ -316,30 +272,10 @@ header img {
 #works #normal ul {
   position: absolute;
   bottom: 15%;
-}
-
-#works #special p,
-#works #normal p {
-  position: absolute;
-  top: 42%;
-  left: 16px;
-  color: white;
-  font-size: 4.8vw;
-  height: 87px;
-  font-family: 'Crete Round', sans-serif;
-  line-height: 24px;
-  width: 90%;
-}
-
-#works #special ul,
-#works #normal ul {
-  position: absolute;
-  bottom: 15%;
   left: 16px;
   padding: 0;
 }
 
-#works #special ul li,
 #works #special ul li,
 #works #normal ul li {
   display: flex;
@@ -348,7 +284,6 @@ header img {
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
   font-family: 'Inter', sans-serif;
-  font-family: 'Inter',sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -368,22 +303,11 @@ header img {
 #works #normal button {
   position: absolute;
   bottom: 1.5%;
-}
-
-#works #special button,
-#works #normal button {
-  position: absolute;
-  bottom: 1.5%;
   width: 100%;
   display: flex;
   align-items: center;
   text-align: center;
   padding: 1em 5em;
-  white-space: nowrap;
-  margin-bottom: -1.8em;
-  font-size: 6vw;
-  padding: 12px 113.5px;
-  padding: 1.2em 9em;
   white-space: nowrap;
   margin-bottom: -1.8em;
   font-size: 6vw;
@@ -406,37 +330,6 @@ header img {
   background-position: right bottom;
   background-repeat: no-repeat;
   height: 84vh;
-  height: 167vh;
-}
-
-.about .brief h1 {
-  font-family: 'Crete Round',sans-serif;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
-  text-align: center;
-  padding: 0vw 9vw;
-}
-
-.about .brief p {
-  width: 327px;
-  height: 148px;
-  font-family: 'Inter',sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #F4F5F7;
-  padding: 0vw 9vw;
-}
-
-.about .brief button {
-  margin-left: 1.75rem;
-  width: 41vw;
-  height: 13.8vh;
-  margin-bottom: 20rem;
 }
 
 .about hr {
