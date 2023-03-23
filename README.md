@@ -37,17 +37,18 @@ GitHub/Git, VS Code, HTML/CSS, Linter, Figma
 
 ### Key Features <a name="key-features"></a>
 
-- HTML/CSS
-- Linter
-- Figma
+- Header
+- Intro section
+- Work section
+- About section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Future Features <a name="future-features"></a>
 
-- Work section
-- About myself section
+- Contact section
+- Footer
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
