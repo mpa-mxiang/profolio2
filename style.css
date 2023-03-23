@@ -29,6 +29,7 @@ button {
   padding: 1em;
   white-space: nowrap;
   width: 8em;
+<<<<<<< HEAD
   height: 9vh;
   letter-spacing: 0.03em;
   font-weight: 700;
@@ -53,6 +54,8 @@ button:disabled {
   font-family: "inter", sans-serif;
   padding: 12px;
   width: 37%;
+=======
+>>>>>>> 3fd6cd3 (modify buttons and text)
   height: 9vh;
   letter-spacing: 0.03em;
   font-weight: 700;
@@ -126,12 +129,15 @@ header img {
   margin: 0;
 }
 
+<<<<<<< HEAD
 .about .list:last-child h1 {
   padding-left: 3em;
 }
 
+=======
+>>>>>>> 3fd6cd3 (modify buttons and text)
 .about .list:last-child h1 {
-  padding-left: 34vw;
+  padding-left: 3em;
 }
 
 #intro h1 {
@@ -249,7 +255,10 @@ header img {
 
 .about .list img {
   width: unset;
+<<<<<<< HEAD
   width: fit-content;
+=======
+>>>>>>> 3fd6cd3 (modify buttons and text)
 }
 
 #works #special img,
@@ -344,12 +353,15 @@ header img {
   height: 7.8vh;
   margin-top: 4.5em;
   font-size: 4.2vw;
+<<<<<<< HEAD
 }
 
 #works #special button,
 #works #normal button {
   position: absolute;
   bottom: 1.5%;
+=======
+>>>>>>> 3fd6cd3 (modify buttons and text)
 }
 
 #works #special button,
@@ -361,14 +373,17 @@ header img {
   align-items: center;
   text-align: center;
   padding: 1em 5em;
+<<<<<<< HEAD
   white-space: nowrap;
   margin-bottom: -1.8em;
   font-size: 6vw;
   padding: 12px 113.5px;
   padding: 1.2em 9em;
+=======
+>>>>>>> 3fd6cd3 (modify buttons and text)
   white-space: nowrap;
   margin-bottom: -1.8em;
-  font-size: 4.2vw;
+  font-size: 6vw;
 }
 
 #works #normal:last-child {
