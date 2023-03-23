@@ -161,6 +161,10 @@ header img {
   padding: 0;
 }
 
+.about .list:last-child ul {
+  margin-bottom: 6rem;
+}
+
 #intro ul {
   margin-left: -9vw;
   margin-top: 1vw;
@@ -330,8 +334,4 @@ header img {
 
 .about hr {
   border: 1px solid #fff;
-}
-
-.about .list:last-child ul {
-  margin-bottom: 6rem;
 }
