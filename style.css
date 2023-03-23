@@ -185,6 +185,7 @@ header img {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
+  white-space: nowrap;
   align-self: center;
 }
 
@@ -209,7 +210,7 @@ header img {
 }
 
 #top-work ul {
-  margin-left: -12vw;
+  margin-left: -2.7rem;
   gap: 12px;
 }
 
@@ -246,14 +247,13 @@ header img {
 #works #special h1,
 #works #normal h1 {
   position: absolute;
-  top: 12.3%;
+  top: 10.2%;
   left: 16px;
   color: white;
-  width: 95%;
-  height: 81px;
   font-family: 'Crete Round', sans-serif;
-  font-size: 32px;
+  font-size: 8vw;
   line-height: 44px;
+  white-space: break-spaces;
 }
 
 #works #special p,
@@ -262,17 +262,16 @@ header img {
   top: 42%;
   left: 16px;
   color: white;
-  font-size: 4.8vw;
+  font-size: 4.2vw;
   height: 87px;
   font-family: 'Crete Round', sans-serif;
   line-height: 24px;
-  width: 90%;
 }
 
 #works #special ul,
 #works #normal ul {
   position: absolute;
-  bottom: 15%;
+  bottom: 12%;
   left: 16px;
   padding: 0;
 }
