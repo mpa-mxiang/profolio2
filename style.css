@@ -28,7 +28,7 @@ button {
   font-family: "Inter", sans-serif;
   padding: 1em;
   white-space: nowrap;
-  width: 37%;
+  width: 8em;
   height: 9vh;
   letter-spacing: 0.03em;
   font-weight: 700;
@@ -89,8 +89,21 @@ header img {
   padding: 1vh 9vw;
 }
 
+.about .list h1 {
+  font-family: 'InaiMathi', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2em;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 0.5em;
+  padding: 1.75em;
+  margin: 0;
+}
+
 .about .list:last-child h1 {
-  padding-left: 34vw;
+  padding-left: 3em;
 }
 
 #intro h1 {
@@ -203,7 +216,7 @@ header img {
 }
 
 .about .list img {
-  width: fit-content;
+  width: unset;
 }
 
 #works #special img,
@@ -265,6 +278,7 @@ header img {
   width: 42vw;
   height: 7.8vh;
   margin-top: 4.5em;
+  font-size: 4.2vw;
 }
 
 #works #special button,
@@ -275,10 +289,10 @@ header img {
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 1.2em 9em;
+  padding: 1em 5em;
   white-space: nowrap;
   margin-bottom: -1.8em;
-  font-size: 4.2vw;
+  font-size: 6vw;
 }
 
 #works #normal:last-child {
