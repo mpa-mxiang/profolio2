@@ -64,6 +64,21 @@ button:disabled {
   border: 0;
 }
 
+button:hover {
+  color: #f55800;
+  background: #fff5e1;
+}
+
+button:active {
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+button:disabled {
+  color: #f4f1f0;
+  background: #5b5957;
+}
+
 hr {
   width: 95%;
   border: 1px solid #212121;
@@ -129,13 +144,10 @@ header img {
   margin: 0;
 }
 
-<<<<<<< HEAD
 .about .list:last-child h1 {
   padding-left: 3em;
 }
 
-=======
->>>>>>> 3fd6cd3 (modify buttons and text)
 .about .list:last-child h1 {
   padding-left: 3em;
 }
@@ -255,10 +267,7 @@ header img {
 
 .about .list img {
   width: unset;
-<<<<<<< HEAD
   width: fit-content;
-=======
->>>>>>> 3fd6cd3 (modify buttons and text)
 }
 
 #works #special img,
