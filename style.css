@@ -177,6 +177,7 @@ header img {
   display: flex;
   flex-direction: column;
   align-self: center;
+  padding: 0 1.5rem;
 }
 
 #works h1 {
