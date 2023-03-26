@@ -24,6 +24,7 @@ ul {
   gap: 6vw;
 }
 
+/* revisit */
 button {
   background: #ff6b00;
   color: #fff;
@@ -69,6 +70,7 @@ header {
   width: 100%;
   height: 11.2vh;
   display: flex;
+  padding: 1.5vw;
 }
 
 header h1 {
@@ -76,14 +78,18 @@ header h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   display: flex;
-  gap: 200px;
+  gap: 54vw;
   align-items: center;
-  margin-left: 1.5em;
+  padding: 1.5em;
 }
 
 header img {
   padding-left: 57vw;
   padding-top: 1.31em;
+}
+
+header ul {
+  display: none;
 }
 
 /* intro */
