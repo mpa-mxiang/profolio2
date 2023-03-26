@@ -10,9 +10,11 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  width: 100%;
+html, body {
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 ul {
@@ -55,6 +57,10 @@ button:disabled {
 hr {
   width: 95%;
   border: 1px solid #212121;
+}
+
+img {
+  width: 100%;
 }
 
 /* header  */
