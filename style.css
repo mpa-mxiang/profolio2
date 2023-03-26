@@ -336,7 +336,6 @@ header img {
 }
 
 @media screen and (min-width: 768px) {
-
   body {
     width: 100%;
   }
@@ -381,6 +380,12 @@ header img {
     margin: 4.2vw;
   }
 
+  .works-desktop h1 {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 3vw;
+  }
+
   .intro .intro-text h1 {
     font-size: 5.1vw;
   }
@@ -419,12 +424,6 @@ header img {
     align-items: center;
   }
 
-  .works-desktop h1 {
-    display: inline-block;
-    white-space: nowrap;
-    font-size: 3vw;
-  }
-
   .works-desktop hr {
     display: inline-block;
     width: 100%;
@@ -443,7 +442,7 @@ header img {
     font-size: 3vw;
   }
 
-  #top-work p, 
+  #top-work p,
   #top-work ul li {
     font-size: 1.5vw;
   }
