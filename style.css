@@ -33,7 +33,6 @@ button {
   padding: 1em;
   white-space: nowrap;
   width: 8em;
-  height: 9vh;
   letter-spacing: 0.03em;
   font-weight: 700;
   display: flex;
@@ -86,8 +85,8 @@ header h1 {
 }
 
 header img {
-  padding-left: 57vw;
-  padding-top: 1.31em;
+  padding-left: 48vw;
+  padding-top: 1.2em;
 }
 
 header ul {
@@ -114,8 +113,6 @@ header ul {
   line-height: 88px;
   color: #ff6b00;
   text-align: center;
-  padding: 1vh 9vw;
-  white-space: nowrap;
 }
 
 .about .list h1 {
@@ -127,7 +124,7 @@ header ul {
   align-items: center;
   color: #fff;
   gap: 0.5em;
-  padding: 1.75em;
+  padding: 15vw;
   margin: 0;
 }
 
@@ -156,8 +153,8 @@ header ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5em;
   color: #f4f5f7;
   padding: 1vh 12vw;
 }
@@ -225,26 +222,25 @@ header ul {
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-size: 22px;
-  line-height: 194%;
+  line-height: 6vh;
 }
 
 #top-work ul {
-  padding: 0;
-  gap: 0.5em;
+  gap: 0.6em;
 }
 
 #top-work ul li {
   box-sizing: border-box;
   border: 1px solid #8993a4;
   align-items: center;
-  padding: 10px 12px;
+  padding: 0.75em 0.75em;
 }
 
 .works #special,
 .works #normal {
   position: relative;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 2.4em;
+  margin-bottom: 2.4em;
 }
 
 .about .list img {
@@ -272,19 +268,19 @@ header ul {
 .works #normal p {
   position: absolute;
   top: 42%;
-  left: 16px;
+  left: 1.2em;
   color: white;
   font-size: 4.2vw;
-  height: 87px;
   font-family: 'Crete Round', sans-serif;
-  line-height: 24px;
+  line-height: 1.8em;
+  width: 90%;
 }
 
 .works #special ul,
 .works #normal ul {
   position: absolute;
   bottom: 12%;
-  left: 16px;
+  left: 1em;
   padding: 0;
 }
 
@@ -293,21 +289,20 @@ header ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 12px;
+  padding: 1.2vh 3vw;
   background: rgba(255, 255, 255, 0.24);
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 4.5vw;
   color: #fff;
-  line-height: 20px;
 }
 
 .about .brief button {
-  margin-left: 2.4rem;
+  margin-left: 11.4vw;
   width: 42vw;
   height: 7.8vh;
-  margin-top: 4.5em;
+  margin-top: 12vh;
   font-size: 4.2vw;
 }
 
@@ -319,14 +314,14 @@ header ul {
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 1em 5em;
+  padding: 1.2em 4em;
   white-space: nowrap;
   margin-bottom: -1.8em;
   font-size: 6vw;
 }
 
 .works #normal:last-child {
-  margin-bottom: 120px;
+  margin-bottom: 12em;
 }
 
 /* about */
@@ -341,7 +336,7 @@ header ul {
   background-image: url("./img/about-me-mobile.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  height: 84vh;
+  height: 81vh;
 }
 
 .about hr {
@@ -358,7 +353,8 @@ header ul {
   }
 
   header h1 {
-    font-size: 1.5vw;
+    font-size: 2.1vw;
+    padding-top: 1em;
   }
 
   header h1 .header-desktop {
@@ -371,9 +367,15 @@ header ul {
     right: 9%;
   }
 
+  header ul {
+    display: flex;
+    padding-left: 24vw;
+    font-size: 2.1vw;
+  }
+
   header li {
-    display: inline-block;
     font-family: 'Inter', sans-serif;
+    color: #fff;
   }
 
   .img-container img {
