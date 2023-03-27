@@ -363,7 +363,7 @@ header ul {
   header ul {
     display: flex;
     padding-left: 24vw;
-    font-size: 2.1vw;
+    padding-top: 1.5vw;
   }
 
   header li {
