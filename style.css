@@ -238,8 +238,7 @@ header ul {
 .works #special,
 .works #normal {
   position: relative;
-  margin-top: 2.4em;
-  margin-bottom: 2.4em;
+  margin: 2.4vh 1.2vw;
 }
 
 .about .list img {
@@ -397,6 +396,7 @@ header ul {
     display: inline-block;
     white-space: nowrap;
     font-size: 3vw;
+    padding-left: 3vw;
   }
 
   .text-div h1 {
@@ -570,21 +570,28 @@ header ul {
 
   .works #normal h1 {
     font-size: 2.7vw;
+    line-height: 3vw;
+    top: 33%;
   }
 
   .works #normal p {
-    font-size: 1.5vw;
-    margin-left: 2.4vw;
-    line-height: 2.7vw;
+    font-size: 1.2vw;
+    margin-left: 0.3vw;
+    line-height: 2vw;
+    font-family: 'Inter', sans-serif;
+    top: 57%;
+    left: 2vw;
   }
 
   .works #normal ul {
-    margin-left: 2.1vw;
-    font-size: 1.5vw;
+    gap: 1.5vw;
+    bottom: 9%;
   }
 
-  #normal ul li {
-    padding: 6% 3%;
+  .works #normal ul li {
+    padding: 1.2vh 1.2vw;
+    font-size: 1.5vw;
+    margin-bottom: -3vw;
   }
 
   .about .brief {
