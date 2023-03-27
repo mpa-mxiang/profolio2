@@ -68,7 +68,7 @@ img {
 header {
   background: #3c3a39;
   width: 100%;
-  height: 9vh;
+  height: 15vh;
   display: flex;
 }
 
@@ -363,7 +363,7 @@ header ul {
   header ul {
     display: flex;
     padding-left: 24vw;
-    padding-top: 1.5vw;
+    padding-top: 1.2vw;
   }
 
   header li {
@@ -384,6 +384,7 @@ header ul {
     background-image: url("./img/Illustration-header.png");
     background-position: right 50%;
     background-size: 40% auto;
+    height: 174vh;
   }
 
   .intro .intro-text {
@@ -409,19 +410,19 @@ header ul {
 
   .intro h2 {
     font-size: 3.6vw;
-    padding-top: 3vh;
+    padding-top: 6vh;
   }
 
   .intro p {
     font-size: 2.1vw;
-    padding-top: 3vh;
+    padding-top: 6vh;
   }
 
   .intro ul {
     flex-direction: column;
-    margin-top: -39vw;
+    margin-top: -36vw;
     gap: 1.5vw;
-    margin-left: -3vw;
+    margin-left: -1vw;
   }
 
   .intro ul li img {
