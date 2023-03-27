@@ -68,9 +68,8 @@ img {
 header {
   background: #3c3a39;
   width: 100%;
-  height: 11.2vh;
+  height: 9vh;
   display: flex;
-  padding: 1.5vw;
 }
 
 /* revisit */
@@ -346,6 +345,10 @@ header ul {
 @media screen and (min-width: 768px) {
   body {
     width: 100%;
+  }
+
+  header {
+    height: 18vh;
   }
 
   header .header-mobile {
