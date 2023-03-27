@@ -74,6 +74,7 @@ header {
   padding: 1.5vw;
 }
 
+/* revisit */
 header h1 {
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -94,7 +95,7 @@ header ul {
 }
 
 /* intro */
-#intro {
+.intro {
   background: #1c1a19;
   width: 100%;
   background-image: url("./img/intro-mobile.png");
@@ -134,7 +135,8 @@ header ul {
   padding-left: 3em;
 }
 
-#intro h1 {
+/* revisit */
+.intro h1 {
   color: #ff6800;
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
@@ -142,8 +144,8 @@ header ul {
   padding-right: 29.1vw;
   align-self: center;
 }
-
-#intro h2 {
+/* revisit */
+.intro h2 {
   color: #fff5e1;
   font-family: 'Roboto', sans-serif;
   margin-top: -6vw;
@@ -159,8 +161,8 @@ header ul {
   color: #f4f5f7;
   padding: 1vh 12vw;
 }
-
-#intro p {
+/* revisit */
+.intro p {
   color: #fff;
   font-family: "Poppins", sans-serif;
   margin-top: -3vw;
@@ -176,27 +178,25 @@ header ul {
 .about .list:last-child ul {
   margin-bottom: 6rem;
 }
-
-#intro ul {
+/* revisit */
+.intro ul {
   margin-left: -9vw;
   margin-top: 1vw;
 }
 
 /* works */
-#works {
+.works {
   background: #e5e5e5;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-self: center;
   padding: 0 1.5rem;
 }
 
-#works h1 {
+.works h1 {
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2em;
   white-space: nowrap;
   align-self: center;
 }
@@ -204,20 +204,15 @@ header ul {
 #top-work {
   display: flex;
   flex-direction: column;
-  margin: 24px;
-  margin-bottom: 24px;
 }
 
 #top-work h1 {
-  font-size: 32px;
-  line-height: 44px;
-  height: 5vh;
   color: #091e42;
 }
 
 #top-work p {
   font-family: "Inter", sans-serif;
-  line-height: 24px;
+  line-height: 1.5em;
   color: #091e42;
 }
 
@@ -233,6 +228,11 @@ header ul {
   line-height: 194%;
 }
 
+#top-work ul {
+  padding: 0;
+  gap: 0.5em;
+}
+
 #top-work ul li {
   box-sizing: border-box;
   border: 1px solid #8993a4;
@@ -240,8 +240,8 @@ header ul {
   padding: 10px 12px;
 }
 
-#works #special,
-#works #normal {
+.works #special,
+.works #normal {
   position: relative;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -251,13 +251,13 @@ header ul {
   width: unset;
 }
 
-#works #special img,
-#works #normal img {
+.works #special img,
+.works #normal img {
   width: 100%;
 }
 
-#works #special h1,
-#works #normal h1 {
+.works #special h1,
+.works #normal h1 {
   position: absolute;
   top: 10.2%;
   left: 16px;
@@ -268,8 +268,8 @@ header ul {
   white-space: break-spaces;
 }
 
-#works #special p,
-#works #normal p {
+.works #special p,
+.works #normal p {
   position: absolute;
   top: 42%;
   left: 16px;
@@ -280,16 +280,16 @@ header ul {
   line-height: 24px;
 }
 
-#works #special ul,
-#works #normal ul {
+.works #special ul,
+.works #normal ul {
   position: absolute;
   bottom: 12%;
   left: 16px;
   padding: 0;
 }
 
-#works #special ul li,
-#works #normal ul li {
+.works #special ul li,
+.works #normal ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -311,8 +311,8 @@ header ul {
   font-size: 4.2vw;
 }
 
-#works #special button,
-#works #normal button {
+.works #special button,
+.works #normal button {
   position: absolute;
   bottom: 1.5%;
   width: 100%;
@@ -325,7 +325,7 @@ header ul {
   font-size: 6vw;
 }
 
-#works #normal:last-child {
+.works #normal:last-child {
   margin-bottom: 120px;
 }
 
@@ -403,6 +403,10 @@ header ul {
     font-size: 3vw;
   }
 
+  .text-div h1 {
+    font-size: 3vw;
+  }
+
   .intro .intro-text h1 {
     font-size: 5.1vw;
   }
@@ -455,13 +459,50 @@ header ul {
     justify-content: space-between;
   }
 
+  .about .brief h1 {
+    font-size: 9vw;
+    white-space: nowrap;
+  }
+
+  .about .list h1 {
+    font-size: 4.5vw;
+    padding-left: 7.2vw;
+  }
+
+  .about .list:last-child h1 {
+    padding-left: 9vw;
+  }
+
   #top-work h1 {
     font-size: 3vw;
+  }
+
+  .about .brief p {
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 9vw;
+  }
+
+  .about .list ul li {
+    font-size: 4.2vw;
   }
 
   #top-work p,
   #top-work ul li {
     font-size: 1.5vw;
+  }
+
+  .form-div button {
+    padding: 3vh 6vw;
+    margin-right: 34.5%;
+    font-size: 1.5vw;
+  }
+
+  .about .brief button {
+    margin-left: 9vw;
+    padding: 3vh 6vw;
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
   }
 
   #top-work button {
@@ -498,6 +539,14 @@ header ul {
     padding: 2.1vh 9vw;
     bottom: 2.975vw;
     font-size: 1.5vw;
+  }
+
+  .about .list ul {
+    padding-left: 6vw;
+  }
+
+  .about .list:last-child ul {
+    padding-left: 0;
   }
 
   #special h1,
@@ -550,24 +599,6 @@ header ul {
     width: 55%;
   }
 
-  .about .brief h1 {
-    font-size: 9vw;
-    white-space: nowrap;
-  }
-
-  .about .brief p {
-    font-size: 1.5vw;
-    padding: 0;
-    margin: 9vw;
-  }
-
-  .about .brief button {
-    margin-left: 9vw;
-    padding: 3vh 6vw;
-    font-size: 1.5vw;
-    margin-bottom: 3vw;
-  }
-
   .about .list-div {
     display: flex;
   }
@@ -576,37 +607,12 @@ header ul {
     width: 33vw;
   }
 
-  .about .list h1 {
-    font-size: 4.5vw;
-    padding-left: 7.2vw;
-  }
-
-  .about .list:last-child h1 {
-    padding-left: 9vw;
-  }
-
-  .about .list ul {
-    padding-left: 6vw;
-  }
-
-  .about .list ul li {
-    font-size: 4.2vw;
-  }
-
-  .about .list:last-child ul {
-    padding-left: 0;
-  }
-
   .contact-div {
     display: flex;
   }
 
   .text-div {
     width: 45.5%;
-  }
-
-  .text-div h1 {
-    font-size: 3vw;
   }
 
   .form-div {
@@ -623,20 +629,13 @@ header ul {
     width: 80%;
     gap: 1em;
   }
-  
-  input[type="text"], 
+
+  input[type="text"],
   textarea {
     font-size: 1.8vw;
-  }
-
-  .form-div button {
-    padding: 3vh 6vw;
-    margin-right: 34.5%;
-    font-size: 1.5vw;
   }
 
   .ned {
     display: none;
   }
-
 }
