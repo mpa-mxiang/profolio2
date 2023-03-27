@@ -357,16 +357,6 @@ header ul {
     padding-top: 1em;
   }
 
-  header h1 .header-desktop {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    right: 9%;
-  }
-
   header ul {
     display: flex;
     padding-left: 24vw;
@@ -411,20 +401,24 @@ header ul {
 
   .intro .intro-text h1 {
     font-size: 5.1vw;
+    white-space: nowrap;
   }
 
   .intro h2 {
     font-size: 3.6vw;
+    padding-top: 3vh;
   }
 
   .intro p {
     font-size: 2.1vw;
+    padding-top: 3vh;
   }
 
   .intro ul {
     flex-direction: column;
-    margin-top: -36vw;
+    margin-top: -39vw;
     gap: 1.5vw;
+    margin-left: -3vw;
   }
 
   .intro ul li img {
