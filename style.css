@@ -93,6 +93,16 @@ header img {
   padding: 5rem 1rem;
 }
 
+.contact h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2em;
+  line-height: 1.38em;
+  text-align: center;
+  padding: 3vw;
+}
+
 .about .brief h1 {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
@@ -151,6 +161,12 @@ header img {
   color: #fff;
   font-family: "Poppins", sans-serif;
   margin-top: -3vw;
+}
+
+.footer ul {
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0;
 }
 
 .about .list ul {
@@ -232,6 +248,10 @@ header img {
   position: relative;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+
+.footer img {
+  filter: grayscale(100%);
 }
 
 .about .list img {
@@ -341,16 +361,6 @@ header img {
   padding-bottom: 11.2%;
 }
 
-.contact h1 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.2em;
-  line-height: 1.38em;
-  text-align: center;
-  padding: 3vw;
-}
-
 .contact form {
   display: flex;
   flex-direction: column;
@@ -361,7 +371,7 @@ header img {
 
 input[type="text"],
 input[type="email"] {
-  border: solid 1px #DBD8D7;
+  border: solid 1px #dbd8d7;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -387,18 +397,7 @@ textarea {
   border: 1px solid#dfe1e6;
 }
 
-.footer ul {
-  justify-content: center;
-  align-items: center;
-  padding-inline-start: 0;
-}
-
-.footer img {
-  filter: grayscale(100%);
-}
-
 .ned {
   border: 6px solid black;
   width: 35%;
 }
-
