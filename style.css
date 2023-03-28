@@ -358,6 +358,10 @@ header ul {
   align-items: center;
 }
 
+.input-div {
+  display: none;
+}
+
 input[type="text"],
 input[type="email"] {
   border: solid 1px #dbd8d7;
@@ -423,7 +427,7 @@ footer hr {
   header ul {
     display: flex;
     padding-left: 24vw;
-    padding-top: 1.2vw;
+    padding-top: 2.4vh;
   }
 
   header li {
@@ -714,7 +718,7 @@ footer hr {
     padding: 3vw;
   }
 
-  #name {
+  .form-div #name {
     display: none;
   }
 
@@ -732,4 +736,5 @@ footer hr {
   .ned {
     display: none;
   }
+  
 }
