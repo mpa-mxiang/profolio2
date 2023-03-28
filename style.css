@@ -481,8 +481,6 @@ header ul {
     font-size: 1.5vw;
     padding: 0;
     margin: 9vw;
-    margin-left: 7.2vw;
-    margin-top: 4.2vw;
   }
 
   .about .list ul li {
@@ -501,9 +499,10 @@ header ul {
   }
 
   .about .brief button {
-    margin-left: 7vw;
+    margin-left: 9vw;
     padding: 3vh 1.5vw;
     font-size: 1.5vw;
+    margin-top: -9vw;
     width: 15vw;
   }
 
