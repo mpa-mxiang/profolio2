@@ -236,7 +236,7 @@ header ul {
 }
 
 .works #special,
-.works .normal {
+.works #normal {
   position: relative;
   margin: 2.4vh 1.2vw;
 }
@@ -246,12 +246,12 @@ header ul {
 }
 
 .works #special img,
-.works .normal img {
+.works #normal img {
   width: 100%;
 }
 
 .works #special h1,
-.works .normal h1 {
+.works #normal h1 {
   position: absolute;
   top: 10.2%;
   left: 16px;
@@ -263,7 +263,7 @@ header ul {
 }
 
 .works #special p,
-.works .normal p {
+.works #normal p {
   position: absolute;
   top: 42%;
   left: 1.2em;
@@ -275,7 +275,7 @@ header ul {
 }
 
 .works #special ul,
-.works .normal ul {
+.works #normal ul {
   position: absolute;
   bottom: 12%;
   left: 1em;
@@ -283,7 +283,7 @@ header ul {
 }
 
 .works #special ul li,
-.works .normal ul li {
+.works #normal ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -305,7 +305,7 @@ header ul {
 }
 
 .works #special button,
-.works .normal button {
+.works #normal button {
   position: absolute;
   bottom: 1.5%;
   width: 100%;
@@ -318,7 +318,7 @@ header ul {
   font-size: 6vw;
 }
 
-.works .normal:last-child {
+.works #normal:last-child {
   margin-bottom: 12em;
 }
 
@@ -436,7 +436,7 @@ header ul {
 
   #top-work,
   #special,
-  .normal {
+  #normal {
     width: 33.33%;
     margin: 0 1em;
   }
@@ -481,6 +481,8 @@ header ul {
     font-size: 1.5vw;
     padding: 0;
     margin: 9vw;
+    margin-left: 7.2vw;
+    margin-top: 4.2vw;
   }
 
   .about .list ul li {
@@ -499,10 +501,9 @@ header ul {
   }
 
   .about .brief button {
-    margin-left: 9vw;
+    margin-left: 7vw;
     padding: 3vh 1.5vw;
     font-size: 1.5vw;
-    margin-top: -9vw;
     width: 15vw;
   }
 
@@ -528,7 +529,7 @@ header ul {
   }
 
   #special,
-  .normal {
+  #normal {
     width: 27vw;
   }
 
@@ -537,8 +538,8 @@ header ul {
   }
 
   .works #special button {
-    padding: 2.1vh 9vw;
-    bottom: 3.12vh;
+    padding: 3vh 9vw;
+    bottom: 2.975vw;
     font-size: 1.5vw;
   }
 
@@ -556,21 +557,22 @@ header ul {
     display: none;
   }
 
-  .div-container .normal button {
+  .div-container #normal button {
     display: none;
   }
 
-  .normal h1 {
+  #normal h1 {
     font-size: 1.38em;
   }
 
   .works #normal h1 {
     font-size: 2.7vw;
     line-height: 3vw;
-    top: 33%;
+    top: 30%;
+    left: 2.1vw
   }
 
-  .works .normal p {
+  .works #normal p {
     font-size: 1.2vw;
     margin-left: 0.3vw;
     line-height: 2vw;
@@ -579,12 +581,13 @@ header ul {
     left: 2vw;
   }
 
-  .works .normal ul {
+  .works #normal ul {
     gap: 1.5vw;
-    bottom: 9%;
+    bottom: 12%;
+    left: 2.1vw;
   }
 
-  .works .normal ul li {
+  .works #normal ul li {
     padding: 1.2vh 1.2vw;
     font-size: 1.5vw;
     margin-bottom: -3vw;
