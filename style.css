@@ -163,7 +163,7 @@ header img {
   margin-top: -3vw;
 }
 
-.footer ul {
+footer ul {
   justify-content: center;
   align-items: center;
   padding-inline-start: 0;
@@ -248,10 +248,6 @@ header img {
   position: relative;
   margin-top: 24px;
   margin-bottom: 24px;
-}
-
-.footer img {
-  filter: grayscale(100%);
 }
 
 .about .list img {
@@ -350,6 +346,10 @@ header img {
   height: 84vh;
 }
 
+footer hr {
+  border: 1px solid#dfe1e6;
+}
+
 .about hr {
   border: 1px solid #fff;
 }
@@ -389,19 +389,4 @@ textarea {
   line-height: 2.4em;
   width: 80%;
   height: 27vh;
-}
-
-/* footer */
-
-
-footer hr {
-  border: 1px solid#dfe1e6;
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-between;
-  max-width: 200px;
-  margin: 0 auto;
-  padding: 0;
 }
