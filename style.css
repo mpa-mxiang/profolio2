@@ -564,11 +564,10 @@ header ul {
     font-size: 1.38em;
   }
 
-  .works .normal h1 {
+  .works #normal h1 {
     font-size: 2.7vw;
     line-height: 3vw;
-    top: 30%;
-    left: 2.1vw
+    top: 33%;
   }
 
   .works .normal p {
@@ -582,8 +581,7 @@ header ul {
 
   .works .normal ul {
     gap: 1.5vw;
-    bottom: 12%;
-    left: 2.1vw;
+    bottom: 9%;
   }
 
   .works .normal ul li {
