@@ -462,7 +462,6 @@ header ul {
 
   .about .brief h1 {
     font-size: 9vw;
-    white-space: nowrap;
   }
 
   .about .list h1 {
@@ -501,9 +500,10 @@ header ul {
 
   .about .brief button {
     margin-left: 9vw;
-    padding: 3vh 6vw;
+    padding: 3vh 1.5vw;
     font-size: 1.5vw;
-    margin-bottom: 3vw;
+    margin-top: -9vw;
+    width: 15vw;
   }
 
   #top-work button {
