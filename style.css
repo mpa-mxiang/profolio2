@@ -209,7 +209,7 @@ header img {
 }
 
 #top-work ul {
-  margin-left: -2.7rem;
+  margin-left: -2.4rem;
   gap: 12px;
 }
 
@@ -224,7 +224,7 @@ header img {
   box-sizing: border-box;
   border: 1px solid #8993a4;
   align-items: center;
-  padding: 10px 12px;
+  padding: 9px 6px;
 }
 
 #works #special,
@@ -319,7 +319,6 @@ header img {
 /* about */
 .about {
   background: #1c1a19;
-  position: absolute;
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -334,3 +333,72 @@ header img {
 .about hr {
   border: 1px solid #fff;
 }
+
+/* contact */
+.contact {
+  background: #e5e5e5;
+  width: 100%;
+  padding-bottom: 11.2%;
+}
+
+.contact h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2em;
+  line-height: 1.38em;
+  text-align: center;
+  padding: 3vw;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.9em;
+  width: 100%;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: solid 1px #DBD8D7;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+  width: 80%;
+}
+
+textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  line-height: 2.4em;
+  width: 80%;
+  height: 27vh;
+}
+
+/* footer */
+
+.footer hr {
+  border: 1px solid#dfe1e6;
+}
+
+.footer ul {
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+.footer img {
+  filter: grayscale(100%);
+}
+
+.ned {
+  border: 6px solid black;
+  width: 35%;
+}
+
