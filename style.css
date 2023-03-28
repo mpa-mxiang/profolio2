@@ -436,7 +436,7 @@ header ul {
 
   #top-work,
   #special,
-  #normal {
+  .normal {
     width: 33.33%;
     margin: 0 1em;
   }
@@ -529,7 +529,7 @@ header ul {
   }
 
   #special,
-  #normal {
+  .normal {
     width: 27vw;
   }
 
@@ -557,22 +557,22 @@ header ul {
     display: none;
   }
 
-  .div-container #normal button {
+  .div-container .normal button {
     display: none;
   }
 
-  #normal h1 {
+  .normal h1 {
     font-size: 1.38em;
   }
 
-  .works #normal h1 {
+  .works .normal h1 {
     font-size: 2.7vw;
     line-height: 3vw;
     top: 30%;
     left: 2.1vw
   }
 
-  .works #normal p {
+  .works .normal p {
     font-size: 1.2vw;
     margin-left: 0.3vw;
     line-height: 2vw;
@@ -581,13 +581,13 @@ header ul {
     left: 2vw;
   }
 
-  .works #normal ul {
+  .works .normal ul {
     gap: 1.5vw;
     bottom: 12%;
     left: 2.1vw;
   }
 
-  .works #normal ul li {
+  .works .normal ul li {
     padding: 1.2vh 1.2vw;
     font-size: 1.5vw;
     margin-bottom: -3vw;
