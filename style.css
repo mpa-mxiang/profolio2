@@ -303,7 +303,7 @@ header ul {
   margin-left: 11.4vw;
   width: 42vw;
   height: 7.8vh;
-  margin-top: 12vh;
+  margin-top: 3rem;
   font-size: 4.2vw;
 }
 
@@ -329,7 +329,7 @@ header ul {
 .about {
   background: #1c1a19;
   width: 100%;
-  margin-bottom: 1rem;
+  padding: 3rem 0;
 }
 
 .about .brief {
@@ -528,6 +528,8 @@ footer hr {
 
   .about .brief h1 {
     font-size: 9vw;
+    padding-top: 24vh;
+    margin-bottom: 6vh;
   }
 
   .about .list h1 {
@@ -544,11 +546,10 @@ footer hr {
   }
 
   .about .brief p {
+    padding: 3vh 0;
     font-size: 1.5vw;
-    padding: 0;
-    margin: 9vw;
     margin-left: 7.2vw;
-    margin-top: 4.2vw;
+    width: 84%;
   }
 
   .about .list ul li {
@@ -567,10 +568,10 @@ footer hr {
   }
 
   .about .brief button {
-    margin-left: 7vw;
-    padding: 3vh 1.5vw;
+    margin-left: 7.2vw;
     font-size: 1.5vw;
     width: 15vw;
+    margin-top: 6vw;
   }
 
   #top-work button {
@@ -686,11 +687,13 @@ footer hr {
   }
 
   .about .brief {
+    padding: 0;
     margin: 0 auto;
     background-image: url("./img/about-me-desktop.png");
-    background-position: right 50%;
-    background-size: 30vw;
+    background-position: right bottom;
+    background-size: 42vw;
     width: 100%;
+    margin-bottom: 15vw;
   }
 
   .about .about-text {
@@ -735,6 +738,10 @@ footer hr {
 
   .ned {
     display: none;
+  }
+
+  .about hr {
+    margin-top: 12vh;
   }
   
 }
