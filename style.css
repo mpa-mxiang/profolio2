@@ -535,7 +535,7 @@ footer hr {
 
   .about .list h1 {
     font-size: 4.5vw;
-    padding-left: 7.2vw;
+    padding: 9vw 6vw;
   }
 
   .about .list:last-child h1 {
