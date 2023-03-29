@@ -25,7 +25,6 @@ ul {
   gap: 6vw;
 }
 
-/* revisit */
 button {
   background: #ff6b00;
   color: #fff;
@@ -70,9 +69,9 @@ header {
   width: 100%;
   height: 15vh;
   display: flex;
+  align-items: center;
 }
 
-/* revisit */
 header h1 {
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -85,7 +84,7 @@ header h1 {
 
 header img {
   padding-left: 48vw;
-  padding-top: 1.2em;
+  padding-top: 1.8vw;
 }
 
 header ul {
@@ -131,7 +130,6 @@ header ul {
   padding-left: 3em;
 }
 
-/* revisit */
 .intro h1 {
   color: #ff6800;
   font-family: "Crete Round", sans-serif;
@@ -141,7 +139,6 @@ header ul {
   align-self: center;
 }
 
-/* revisit */
 .intro h2 {
   color: #fff5e1;
   font-family: 'Roboto', sans-serif;
@@ -159,7 +156,6 @@ header ul {
   padding: 1vh 12vw;
 }
 
-/* revisit */
 .intro p {
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -177,7 +173,6 @@ header ul {
   margin-bottom: 6rem;
 }
 
-/* revisit */
 .intro ul {
   margin-left: -9vw;
   margin-top: 1vw;
@@ -420,8 +415,8 @@ footer hr {
   }
 
   header h1 {
-    font-size: 2.1vw;
-    padding-top: 1em;
+    font-size: 2.7vw;
+    padding-top: 5%;
   }
 
   header ul {
@@ -440,23 +435,22 @@ footer hr {
     width: 48vw;
   }
 
-  header .header-desktop img {
+  header .header-desktop {
     width: 1.4em;
   }
 
   section.intro {
     margin: 0 auto;
     background-image: url(./img/Illustration-header.png);
-    background-position: right 0;
-    background-size: 48% auto;
-    padding: 0;
-    height: 180vh;
+    background-position: right center;
+    background-size: auto 100%;
+    padding-top: 50%;
   }
 
   .intro .intro-text {
-    width: 60%;
-    padding: 4.2vw;
-    margin: 4.2vw;
+    width: 50%;
+    margin-left: 9vw;
+    margin-top: -42vw;
   }
 
   .works-desktop h1 {
@@ -488,7 +482,7 @@ footer hr {
 
   .intro ul {
     flex-direction: column;
-    margin-top: -36vw;
+    margin-top: -30vw;
     gap: 1.5vw;
     margin-left: -1vw;
   }
