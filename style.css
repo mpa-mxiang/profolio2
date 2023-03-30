@@ -406,7 +406,7 @@ textarea {
   }
 
   header {
-    height: 51px;
+    height: 9vw;
     display: flex;
     align-items: center;
   }
@@ -564,10 +564,6 @@ textarea {
     font-size: 1.5vw;
     margin-left: 7.2vw;
     width: 84%;
-  }
-
-  .about .list ul li {
-    font-size: clamp(20px, 1vw, 40px);
   }
 
   #top-work p,
@@ -741,5 +737,14 @@ textarea {
     gap: 1.5vw;
     bottom: 10.2%;
     left: 2.1vw;
+  }
+
+  .about .list h1 {
+    font-size: 4.5vw;
+    padding: 9vw 6vw;
+  }
+
+  .about .list ul li {
+    font-size: 4.2vw;
   }
 }
