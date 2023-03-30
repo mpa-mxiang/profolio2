@@ -606,16 +606,12 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     align-self: center;
+    margin-top: 1.5rem;
   }
 
   #special,
   #normal {
     width: 27vw;
-  }
-
-  #special .div-text {
-    background-image: url("./img/spcial-work.png");
-    background-repeat: no-repeat;
   }
   
   #special img {
@@ -624,8 +620,9 @@ textarea {
 
   .works #special button {
     padding: 3vh 9vw;
-    bottom: 9.6vw;
+    bottom: 0;
     font-size: 1.5vw;
+    width: 96%;
   }
 
   .about .list ul {
@@ -705,8 +702,15 @@ textarea {
     margin-top: 12vh;
   }
 
+  .works #special {
+    background-image: url(./img/spcial-work.png);
+    background-repeat: no-repeat;
+    height: 30.5vw;
+    background-size: auto 100%;
+  }
+
   #special .div-text {
-    margin-top: 8.1vw;
+    margin-top: 0;
   }
 
   .works #normal .div-text {
