@@ -692,6 +692,10 @@ textarea {
     font-size: 1.8vw;
   }
 
+  .ned {
+    display: none;
+  }
+
   .about hr {
     margin-top: 12vh;
   }
