@@ -549,6 +549,7 @@ textarea {
 
   .about .list h1 {
     padding: 9vw 6vw;
+    font-size: 4.5vw;
   }
 
   .about .list:last-child h1 {
@@ -564,6 +565,10 @@ textarea {
     font-size: 1.5vw;
     margin-left: 7.2vw;
     width: 84%;
+  }
+
+  .about .list ul li {
+    font-size: 4.2vw;
   }
 
   #top-work p,
@@ -737,14 +742,5 @@ textarea {
     gap: 1.5vw;
     bottom: 10.2%;
     left: 2.1vw;
-  }
-
-  .about .list h1 {
-    font-size: 4.5vw;
-    padding: 9vw 6vw;
-  }
-
-  .about .list ul li {
-    font-size: 4.2vw;
   }
 }
