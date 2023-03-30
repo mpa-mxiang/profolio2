@@ -81,6 +81,10 @@ header img {
   padding-top: 1.31em;
 }
 
+#works img:hover {
+  transform: scale(1.5);
+}
+
 /* intro */
 #intro {
   background: #1c1a19;
