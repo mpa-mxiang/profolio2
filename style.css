@@ -429,6 +429,7 @@ footer hr {
     font-family: 'Inter', sans-serif;
     color: #fff;
     font-size: 2.1vw;
+    position: relative;
   }
 
   .img-container img {
@@ -437,6 +438,9 @@ footer hr {
 
   header .header-desktop {
     width: 1.4em;
+    position: absolute;
+    top: 0;
+    padding: 0;
   }
 
   section.intro {
