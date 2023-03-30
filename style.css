@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Crete Round&display=swap');
-@import url('https://fonts.googleapis.com/css?family=InaiMathi&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Crete Round&display=swap");
+@import url("https://fonts.googleapis.com/css?family=InaiMathi&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
 
 *,
 *::after,
@@ -10,9 +10,16 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  margin: 0;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+main {
+  flex: 1 1 auto;
 }
 
 ul {
@@ -29,13 +36,11 @@ button {
   padding: 1em;
   white-space: nowrap;
   width: 8em;
-  height: 9vh;
   letter-spacing: 0.03em;
   font-weight: 700;
   display: flex;
   align-items: center;
   border: 0;
-  transition: background 1s;
 }
 
 button:hover {
@@ -58,39 +63,40 @@ hr {
   border: 1px solid #212121;
 }
 
+img {
+  width: 100%;
+}
+
 /* header  */
 header {
   background: #3c3a39;
   width: 100%;
-  height: 11.2vh;
+  height: 15vh;
   display: flex;
+  align-items: center;
 }
 
 header h1 {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   display: flex;
-  gap: 200px;
+  gap: 54vw;
   align-items: center;
-  margin-left: 1.5em;
+  padding: 1.5em;
 }
 
-header img {
-  padding-left: 57vw;
-  padding-top: 1.31em;
+header nav {
+  padding-left: 48vw;
+  padding-top: 1.8vw;
 }
 
-.about .list img {
-  width: unset;
-}
-
-#works img:hover {
-  transform: scale(1.5);
+header ul {
+  display: none;
 }
 
 /* intro */
-#intro {
+.intro {
   background: #1c1a19;
   width: 100%;
   background-image: url("./img/intro-mobile.png");
@@ -102,8 +108,16 @@ header img {
   padding: 5rem 1rem;
 }
 
+.works h1 {
+  font-family: "Crete Round", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  white-space: nowrap;
+  text-align: center;
+}
+
 .contact h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.2em;
@@ -112,35 +126,7 @@ header img {
   padding: 3vw;
 }
 
-.about .brief h1 {
-  font-family: 'Crete Round', sans-serif;
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 88px;
-  color: #ff6b00;
-  text-align: center;
-  padding: 1vh 9vw;
-  white-space: nowrap;
-}
-
-.about .list h1 {
-  font-family: 'InaiMathi', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.2em;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  gap: 0.5em;
-  padding: 1.75em;
-  margin: 0;
-}
-
-.about .list:last-child h1 {
-  padding-left: 3em;
-}
-
-#intro h1 {
+.intro h1 {
   color: #ff6800;
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
@@ -149,33 +135,68 @@ header img {
   align-self: center;
 }
 
-#intro h2 {
-  color: #fff5e1;
-  font-family: 'Roboto', sans-serif;
-  margin-top: -6vw;
-}
-
-.about .brief p {
-  height: 148px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
+.about .brief h1 {
+  font-family: "Crete Round", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #f4f5f7;
-  padding: 1vh 12vw;
+  font-size: 3rem;
+  line-height: 88px;
+  color: #ff6b00;
+  text-align: center;
 }
 
-#intro p {
+.about .list h1 {
+  font-family: "InaiMathi", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2em;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 0.5em;
+  padding: 15vw;
+  margin: 0;
+}
+
+.intro p {
   color: #fff;
   font-family: "Poppins", sans-serif;
   margin-top: -3vw;
+}
+
+footer {
+  border-top: 1px solid #dfe1e6;
 }
 
 footer ul {
   justify-content: center;
   align-items: center;
   padding-inline-start: 0;
+}
+
+.intro ul {
+  margin-left: -9vw;
+  margin-top: 1vw;
+}
+
+.about .list:last-child h1 {
+  padding-left: 3em;
+}
+
+.intro h2 {
+  color: #fff5e1;
+  font-family: "Roboto", sans-serif;
+  margin-top: -6vw;
+}
+
+.about .brief p {
+  height: 148px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5em;
+  color: #f4f5f7;
+  padding: 1vh 12vw;
 }
 
 .about .list ul {
@@ -189,166 +210,144 @@ footer ul {
   margin-bottom: 6rem;
 }
 
-#intro ul {
-  margin-left: -9vw;
-  margin-top: 1vw;
-}
-
 /* works */
-#works {
+.works {
   background: #e5e5e5;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-self: center;
   padding: 0 1.5rem;
-}
-
-#works h1 {
-  font-family: "Crete Round", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
-  white-space: nowrap;
-  align-self: center;
 }
 
 #top-work {
   display: flex;
   flex-direction: column;
-  margin: 24px;
-  margin-bottom: 24px;
 }
 
 #top-work h1 {
-  font-size: 32px;
-  line-height: 44px;
-  height: 5vh;
   color: #091e42;
 }
 
 #top-work p {
   font-family: "Inter", sans-serif;
-  line-height: 24px;
+  line-height: 1.5em;
   color: #091e42;
 }
 
 #top-work ul {
-  margin-left: -2.4rem;
+  margin-left: -2.7rem;
   gap: 12px;
 }
 
 .about .list ul li {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
-  line-height: 194%;
+  line-height: 6vh;
 }
 
 #top-work ul li {
   box-sizing: border-box;
   border: 1px solid #8993a4;
   align-items: center;
-  padding: 9px 6px;
+  padding: 0.75em 0.75em;
 }
 
-#works #special,
-#works #normal {
+.works #special,
+.works #normal {
   position: relative;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin: 2.4vh 1.2vw;
 }
 
-#works #special img,
-#works #normal img {
-  width: 100%;
+.about .list img {
+  width: unset;
 }
 
-#works #special h1,
-#works #normal h1 {
+.works #special h1,
+.works #normal h1 {
   position: absolute;
   top: 10.2%;
   left: 16px;
   color: white;
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-size: 8vw;
   line-height: 44px;
   white-space: break-spaces;
+  text-align: left;
 }
 
-#works #special p,
-#works #normal p {
+.works #special p,
+.works #normal p {
   position: absolute;
   top: 42%;
-  left: 16px;
+  left: 1.2em;
   color: white;
-  font-size: 4.2vw;
-  height: 87px;
-  font-family: 'Crete Round', sans-serif;
-  line-height: 24px;
+  font-size: 4vw;
+  font-family: "Crete Round", sans-serif;
+  line-height: 1.8em;
+  width: 90%;
 }
 
-#works #special ul,
-#works #normal ul {
+.works #special ul,
+.works #normal ul {
   position: absolute;
   bottom: 12%;
-  left: 16px;
+  left: 1em;
   padding: 0;
 }
 
-#works #special ul li,
-#works #normal ul li {
+.works #special ul li,
+.works #normal ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px 12px;
+  padding: 1.2vh 3vw;
   background: rgba(255, 255, 255, 0.24);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 4.5vw;
   color: #fff;
-  line-height: 20px;
 }
 
 .about .brief button {
-  margin-left: 2.4rem;
+  margin-left: 11.4vw;
   width: 42vw;
   height: 7.8vh;
-  margin-top: 4.5em;
+  margin-top: 6rem;
   font-size: 4.2vw;
 }
 
-#works #special button,
-#works #normal button {
+.works #special button,
+.works #normal button {
   position: absolute;
   bottom: 1.5%;
   width: 100%;
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 1em 5em;
+  padding: 0.6em 4em;
   white-space: nowrap;
-  margin-bottom: -1.8em;
+  margin-bottom: -0.9em;
   font-size: 6vw;
 }
 
-#works #normal:last-child {
-  margin-bottom: 120px;
+.works #normal:last-child {
+  margin-bottom: 12em;
 }
 
 /* about */
 .about {
   background: #1c1a19;
   width: 100%;
-  margin-bottom: 1rem;
+  padding: 3rem 0;
 }
 
 .about .brief {
   background-image: url("./img/about-me-mobile.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  height: 84vh;
+  height: 81vh;
 }
 
 footer hr {
@@ -361,7 +360,6 @@ footer hr {
 
 /* contact */
 .contact {
-  background: #e5e5e5;
   width: 100%;
   padding-bottom: 11.2%;
 }
@@ -369,7 +367,7 @@ footer hr {
 .contact form {
   display: flex;
   flex-direction: column;
-  gap: 3.9em;
+  gap: 39px;
   width: 100%;
   align-items: center;
 }
@@ -381,7 +379,7 @@ input[type="email"] {
   border-left: none;
   border-right: none;
   background-color: transparent;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: #979493;
@@ -389,9 +387,344 @@ input[type="email"] {
 }
 
 textarea {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
   line-height: 2.4em;
   width: 80%;
   height: 27vh;
+}
+
+.works #special .div-text,
+.works #normal .div-text {
+  top: 8.4%;
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    height: 9vw;
+    display: flex;
+    align-items: center;
+  }
+
+  header nav {
+    padding-left: 24vw;
+    padding-top: 0.9vw;
+  }
+
+  header .header-mobile {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 2.7vw;
+    padding-top: 5%;
+  }
+
+  header ul {
+    display: flex;
+  }
+
+  header li {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    font-size: 2.1vw;
+    position: relative;
+  }
+
+  .img-container img {
+    width: 48vw;
+  }
+
+  header .header-desktop {
+    width: 1.4em;
+    position: absolute;
+    top: 0;
+    padding: 0;
+  }
+
+  section.intro {
+    margin: 0 auto;
+    background-image: url(./img/Illustration-header.png);
+    background-position: right center;
+    background-size: auto 100%;
+    padding-top: 50%;
+  }
+
+  .intro .intro-text {
+    width: 50%;
+    margin-left: 9vw;
+    margin-top: -48vw;
+  }
+
+  .works-desktop h1 {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 3vw;
+    padding-left: 3vw;
+  }
+
+  .text-div h1 {
+    font-size: 4.2vw;
+    padding: 0 1vw;
+  }
+
+  .intro h1 {
+    color: #ff6800;
+    font-family: "Crete Round", sans-serif;
+    font-weight: 400;
+    font-size: 12vw;
+    padding-right: 29.1vw;
+    align-self: center;
+  }
+
+  .intro .intro-text h1 {
+    font-size: 5.1vw;
+    white-space: nowrap;
+  }
+
+  .intro h2 {
+    font-size: 3.6vw;
+    padding-top: 6vh;
+  }
+
+  .intro p {
+    font-size: 2.1vw;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    margin-top: -3vw;
+    padding-top: 6vh;
+  }
+
+  .intro ul {
+    flex-direction: column;
+    margin-top: -30vw;
+    gap: 1.5vw;
+    margin-left: -1vw;
+  }
+
+  .intro ul li img {
+    width: 1.5%;
+  }
+
+  section.works {
+    margin: 0 auto;
+  }
+
+  #top-work,
+  #special,
+  #normal {
+    width: 33.33%;
+    margin: 0 1em;
+  }
+
+  .works-desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  .works-desktop hr {
+    display: inline-block;
+    width: 100%;
+    flex-grow: 1;
+    margin-right: 9.3%;
+    margin-left: 2.4%;
+  }
+
+  #top-work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about .brief h1 {
+    font-size: 9vw;
+    padding-top: 24vh;
+    margin-bottom: 6vh;
+  }
+
+  .about .list h1 {
+    padding: 9vw 6vw;
+    font-size: 4.5vw;
+  }
+
+  .about .list:last-child h1 {
+    padding-left: 9vw;
+  }
+
+  #top-work h1 {
+    font-size: 3vw;
+  }
+
+  .about .brief p {
+    padding: 3vh 0;
+    font-size: 1.5vw;
+    margin-left: 7.2vw;
+    width: 84%;
+  }
+
+  .about .list ul li {
+    font-size: 4.2vw;
+  }
+
+  #top-work p,
+  #top-work ul li {
+    font-size: 1.5vw;
+  }
+
+  .form-div button {
+    margin-right: 55.2%;
+    font-size: 1.5vw;
+  }
+
+  .about .brief button {
+    margin-left: 7.2vw;
+    font-size: 1.5vw;
+    width: 15vw;
+    margin-top: 6vw;
+  }
+
+  #top-work button {
+    width: 15vw;
+    font-size: 1.8vw;
+  }
+
+  .img-container {
+    padding-left: 4.2vw;
+  }
+
+  .text-container {
+    padding-left: 3vw;
+    margin-top: -2.7vw;
+  }
+
+  .div-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  #special,
+  #normal {
+    width: 27vw;
+  }
+
+  #special img {
+    content: url("./img/spcial-work.png");
+  }
+
+  .works #special button {
+    padding: 3vh 9vw;
+    bottom: 9.6vw;
+    font-size: 1.5vw;
+  }
+
+  .about .list ul {
+    padding-left: 6vw;
+  }
+
+  .about .list:last-child ul {
+    padding-left: 0;
+  }
+
+  #special h1,
+  #special p,
+  #special ul {
+    display: none;
+  }
+
+  .div-container #normal button {
+    display: none;
+  }
+
+  .works #normal ul li {
+    padding: 1.2vh 1.2vw;
+    font-size: 1.5vw;
+    margin-bottom: -3vw;
+  }
+
+  .about .brief {
+    padding: 0;
+    margin: 0 auto;
+    background-image: url("./img/about-me-desktop.png");
+    background-position: right bottom;
+    background-size: 42vw;
+    width: 100%;
+    margin-bottom: 24vw;
+  }
+
+  .about .about-text {
+    width: 55%;
+  }
+
+  .about .list-div {
+    display: flex;
+  }
+
+  .about .list {
+    width: 33vw;
+  }
+
+  .contact {
+    padding: 11.1% 0;
+  }
+
+  .contact-div {
+    display: flex;
+  }
+
+  .text-div {
+    width: 45.5%;
+  }
+
+  .form-div {
+    width: 54.5%;
+    padding: 3vw;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 1.8vw;
+  }
+
+  .about hr {
+    margin-top: 12vh;
+  }
+
+  .works #normal .div-text {
+    position: sticky;
+    width: 100%;
+    margin-top: 8.1vw;
+  }
+
+  .works #normal .div-text h1 {
+    margin-top: -29.1vw;
+    font-size: 2.7vw;
+    line-height: 3vw;
+    left: 2.1vw;
+  }
+
+  .works #normal .div-text p {
+    margin-top: -22.2vw;
+    font-size: 1.2vw;
+    margin-left: 0.3vw;
+    line-height: 2vw;
+    font-family: "Inter", sans-serif;
+    top: 57%;
+    left: 2vw;
+  }
+
+  .works #normal .div-text ul {
+    margin-bottom: 13.2vw;
+    gap: 1.5vw;
+    bottom: 10.2%;
+    left: 2.1vw;
+  }
 }
