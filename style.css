@@ -242,12 +242,12 @@ header ul {
 .about .list img {
   width: unset;
 }
-
+/*
 .works #special img,
 .works #normal img {
   width: 100%;
 }
-
+*/
 .works #special h1,
 .works #normal h1 {
   position: absolute;
@@ -266,7 +266,7 @@ header ul {
   top: 42%;
   left: 1.2em;
   color: white;
-  font-size: 4.2vw;
+  font-size: 4vw;
   font-family: 'Crete Round', sans-serif;
   line-height: 1.8em;
   width: 90%;
@@ -310,9 +310,9 @@ header ul {
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 1.2em 4em;
+  padding: 0.6em 4em;
   white-space: nowrap;
-  margin-bottom: -1.8em;
+  margin-bottom: -0.9em;
   font-size: 6vw;
 }
 
@@ -399,7 +399,11 @@ footer hr {
   border: 1px solid#dfe1e6;
 }
 
-
+.works #special .div-text, 
+.works #normal .div-text {
+  top: 8.4%;
+  width: 80%;
+}
 
 @media screen and (min-width: 768px) {
   body {
@@ -600,7 +604,7 @@ footer hr {
 
   .works #special button {
     padding: 3vh 9vw;
-    bottom: 2.975vw;
+    bottom: 9.975vw;
     font-size: 1.5vw;
   }
 
@@ -626,13 +630,7 @@ footer hr {
     font-size: 1.38em;
   }
 
-  .works #normal h1 {
-    font-size: 2.7vw;
-    line-height: 3vw;
-    top: 30%;
-    left: 2.1vw;
-  }
-
+/*
   .works #normal:nth-child(4) h1 {
     top: 17.1%;
   }
@@ -658,7 +656,7 @@ footer hr {
     bottom: 48%;
     left: 2.4vw;
   }
-
+*/
   .works #normal p {
     font-size: 1.2vw;
     margin-left: 0.3vw;
@@ -741,6 +739,27 @@ footer hr {
 
   .about hr {
     margin-top: 12vh;
+  }
+  .works #special .div-text, 
+  .works #normal .div-text {
+    position: sticky;
+    width: 100%;
+    margin-top: 8.1vw;
+  }
+
+  .works #normal .div-text h1 {
+    margin-top: -29.1vw;
+    font-size: 2.7vw;
+    line-height: 3vw;
+    left: 2.1vw;
+  }
+
+  .works #normal .div-text p {
+    margin-top: -22.2vw;
+  }
+
+  .works #normal .div-text ul {
+    margin-bottom: 13.2vw;
   }
   
 }
