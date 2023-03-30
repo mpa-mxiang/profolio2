@@ -41,6 +41,7 @@ button {
   display: flex;
   align-items: center;
   border: 0;
+  transition: background 1s;
 }
 
 button:hover {
@@ -94,6 +95,14 @@ header ul {
   display: none;
 }
 
+.about .list img {
+  width: unset;
+}
+
+#works img:hover {
+  transform: scale(1.5);
+}
+
 /* intro */
 .intro {
   background: #1c1a19;
@@ -132,6 +141,16 @@ header ul {
   font-size: 12vw;
   padding-right: 29.1vw;
   align-self: center;
+}
+
+.contact h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2em;
+  line-height: 1.38em;
+  text-align: center;
+  padding: 3vw;
 }
 
 .about .brief h1 {
@@ -198,6 +217,19 @@ footer ul {
   padding: 1vh 12vw;
 }
 
+
+#intro p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin-top: -3vw;
+}
+
+footer ul {
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
 .about .list ul {
   flex-direction: column;
   align-items: center;
@@ -234,7 +266,7 @@ footer ul {
 }
 
 #top-work ul {
-  margin-left: -2.7rem;
+  margin-left: -2.4rem;
   gap: 12px;
 }
 
@@ -262,8 +294,13 @@ footer ul {
   width: unset;
 }
 
-.works #special h1,
-.works #normal h1 {
+#works #special img,
+#works #normal img {
+  width: 100%;
+}
+
+#works #special h1,
+#works #normal h1 {
   position: absolute;
   top: 10.2%;
   left: 16px;
@@ -347,6 +384,10 @@ footer ul {
   background-position: right bottom;
   background-repeat: no-repeat;
   height: 81vh;
+}
+
+footer hr {
+  border: 1px solid#dfe1e6;
 }
 
 footer hr {
