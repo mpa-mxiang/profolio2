@@ -458,7 +458,7 @@ textarea {
   .intro .intro-text {
     width: 48%;
     margin-left: 9vw;
-    margin-top: -42vw;
+    margin-top: -47.1vw;
   }
 
   .works-desktop h1 {
@@ -504,7 +504,7 @@ textarea {
     flex-direction: column;
     margin-top: -30vw;
     gap: 1.5vw;
-    margin-left: -1vw;
+    margin-left: 1vw;
   }
 
   .intro ul li img {
