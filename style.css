@@ -122,6 +122,15 @@ header ul {
   padding: 3vw;
 }
 
+.intro h1 {
+  color: #ff6800;
+  font-family: "Crete Round", sans-serif;
+  font-weight: 400;
+  font-size: 12vw;
+  padding-right: 29.1vw;
+  align-self: center;
+}
+
 .about .brief h1 {
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
@@ -144,6 +153,23 @@ header ul {
   margin: 0;
 }
 
+.intro p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin-top: -3vw;
+}
+
+footer ul {
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+.intro ul {
+  margin-left: -9vw;
+  margin-top: 1vw;
+}
+
 .about .list:last-child h1 {
   padding-left: 3em;
 }
@@ -163,12 +189,6 @@ header ul {
   line-height: 1.5em;
   color: #f4f5f7;
   padding: 1vh 12vw;
-}
-
-footer ul {
-  justify-content: center;
-  align-items: center;
-  padding-inline-start: 0;
 }
 
 .about .list ul {
@@ -245,6 +265,7 @@ footer ul {
   font-size: 8vw;
   line-height: 44px;
   white-space: break-spaces;
+  text-align: left;
 }
 
 .works #special p,
@@ -285,7 +306,7 @@ footer ul {
   margin-left: 11.4vw;
   width: 42vw;
   height: 7.8vh;
-  margin-top: 3rem;
+  margin-top: 6rem;
   font-size: 4.2vw;
 }
 
