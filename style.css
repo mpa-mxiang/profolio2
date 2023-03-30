@@ -613,8 +613,13 @@ textarea {
     width: 27vw;
   }
 
+  #special .div-text {
+    background-image: url("./img/spcial-work.png");
+    background-repeat: no-repeat;
+  }
+  
   #special img {
-    content: url("./img/spcial-work.png");
+    display: none;
   }
 
   .works #special button {
@@ -698,6 +703,10 @@ textarea {
 
   .about hr {
     margin-top: 12vh;
+  }
+
+  #special .div-text {
+    margin-top: 8.1vw;
   }
 
   .works #normal .div-text {
