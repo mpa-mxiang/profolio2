@@ -35,6 +35,7 @@ button {
   display: flex;
   align-items: center;
   border: 0;
+  transition: background 1s;
 }
 
 button:hover {
@@ -78,6 +79,14 @@ header h1 {
 header img {
   padding-left: 57vw;
   padding-top: 1.31em;
+}
+
+.about .list img {
+  width: unset;
+}
+
+#works img:hover {
+  transform: scale(1.5);
 }
 
 /* intro */
@@ -248,10 +257,6 @@ footer ul {
   position: relative;
   margin-top: 24px;
   margin-bottom: 24px;
-}
-
-.about .list img {
-  width: unset;
 }
 
 #works #special img,
