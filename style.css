@@ -81,6 +81,10 @@ header img {
   padding-top: 1.31em;
 }
 
+.about .list img {
+  width: unset;
+}
+
 #works img:hover {
   transform: scale(1.5);
 }
@@ -253,10 +257,6 @@ footer ul {
   position: relative;
   margin-top: 24px;
   margin-bottom: 24px;
-}
-
-.about .list img {
-  width: unset;
 }
 
 #works #special img,
