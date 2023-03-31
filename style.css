@@ -186,7 +186,7 @@ footer ul {
   padding-left: 3em;
 }
 
-.intro .subtitle {
+.intro h2 {
   color: #fff5e1;
   font-family: "Roboto", sans-serif;
   font-size: 7.5vw;
@@ -457,7 +457,7 @@ textarea {
     margin: 0 auto;
     background-image: url(./img/Illustration-header.png);
     background-position: right center;
-    background-size: auto 100%;
+    background-size: auto 75%;
     padding-top: 50%;
   }
 
@@ -489,7 +489,7 @@ textarea {
     align-self: center;
   }
 
-  .intro .subtitle {
+  .intro h2 {
     font-size: 3.6vw;
     padding-top: 6vh;
   }
