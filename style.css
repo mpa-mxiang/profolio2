@@ -475,18 +475,14 @@ textarea {
     padding: 0 1vw;
   }
 
-  .intro h1 {
-    color: #ff6800;
-    font-family: "Crete Round", sans-serif;
-    font-weight: 400;
-    font-size: 12vw;
-    padding-right: 29.1vw;
-    align-self: center;
-  }
-
   .intro .intro-text h1 {
     font-size: 5.1vw;
     white-space: nowrap;
+    color: #ff6800;
+    font-family: "Crete Round", sans-serif;
+    font-weight: 400;
+    padding-right: 29.1vw;
+    align-self: center;
   }
 
   .intro .subtitle {
