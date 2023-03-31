@@ -41,14 +41,17 @@ GitHub/Git, VS Code, HTML/CSS, Linter, Figma
 - Intro section
 - Work section
 - About section
+- Contact section
+
+
+All of above can be viewed in mobile and desktop responsively.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Future Features <a name="future-features"></a>
 
-- Contact section
-- Footer
+- JavaScript implementation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,7 +122,6 @@ If you like this project please star this project to show your support, thank yo
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse and all of people helped me through the project to make this project success.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
