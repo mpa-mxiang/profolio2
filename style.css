@@ -182,10 +182,12 @@ footer ul {
   padding-left: 3em;
 }
 
-.intro h2 {
+.intro .subtitle {
   color: #fff5e1;
   font-family: "Roboto", sans-serif;
+  font-size: 7.5vw;
   margin-top: -6vw;
+  white-space: nowrap;
 }
 
 .about .brief p {
@@ -487,7 +489,7 @@ textarea {
     white-space: nowrap;
   }
 
-  .intro h2 {
+  .intro .subtitle {
     font-size: 3.6vw;
     padding-top: 6vh;
   }
