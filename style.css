@@ -67,6 +67,10 @@ img {
   width: 100%;
 }
 
+label {
+  display: none;
+}
+
 /* header  */
 header {
   background: #3c3a39;
