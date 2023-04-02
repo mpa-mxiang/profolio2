@@ -79,7 +79,7 @@ Clone this repository to your desired folder in your laptop:
 
 ### Usage
 
-To open the project, use yout prefered explorer and open the index.html file. Or, you can right click the index.html file to open in the live server with the localhost.
+To open the project, use your prefered explorer and open the index.html file. Or, you can right click the index.html file to open in the live server with the localhost.
 
 
 ### Deployment
