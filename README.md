@@ -79,7 +79,10 @@ Clone this repository to your desired folder in your laptop:
 
 ### Usage
 
-To open the project, use yout prefered explorer and open the index.html file. Or, you can right click the index.html file to open in the live server with the localhost.
+To open the project, you can:
+- Use your prefered explorer and open the index.html file. 
+- You can right click the index.html file to open in the live server with the localhost.
+- Visit this site: https://mpa-mxiang.github.io/profolio2/
 
 
 ### Deployment
