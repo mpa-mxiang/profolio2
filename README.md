@@ -29,9 +29,9 @@
 This is a project that build with the checking tool linter, language HTML and CSS to have the header bar and the intro section as the part of the profolio in the mobile section.
 
 
-## 🛠 Built With <a name="VS Code">VS Code</a>
+## 🛠 Built With <a name="built-with">VS Code</a>
 
-### Tech Stack <a name="VS Code"></a>
+### Tech Stack <a name="tech-stack"></a>
 
 GitHub/Git, VS Code, HTML/CSS, Linter, Figma
 
@@ -52,6 +52,13 @@ All of above can be viewed in mobile and desktop responsively.
 ### Future Features <a name="future-features"></a>
 
 - JavaScript implementation
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Live Demo <a name="live-demo"></a>
+
+- https://mpa-mxiang.github.io/profolio2/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,7 +86,11 @@ Clone this repository to your desired folder in your laptop:
 
 ### Usage
 
-To open the project, use your prefered explorer and open the index.html file. Or, you can right click the index.html file to open in the live server with the localhost.
+To open the project, you can:
+- Use your prefered explorer and open the index.html file. 
+- You can right click the index.html file to open in the live server with the localhost.
+- Check live demo: <a href="#live-demo">live demo</a>
+
 
 
 ### Deployment
