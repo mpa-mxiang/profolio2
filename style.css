@@ -29,6 +29,11 @@ ul {
   gap: 6vw;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 button {
   background: #ff6b00;
   color: #fff;
@@ -412,9 +417,11 @@ textarea {
   }
 
   header {
-    height: 9vw;
+    height: 6vw;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 999;
   }
 
   header nav {
@@ -435,9 +442,8 @@ textarea {
     display: flex;
   }
 
-  header li {
+  header li{
     font-family: "Inter", sans-serif;
-    color: #fff;
     font-size: 2.1vw;
     position: relative;
   }
@@ -472,7 +478,7 @@ textarea {
   .intro .intro-text {
     width: 50%;
     margin-left: 9vw;
-    margin-top: -48vw;
+    margin-top: -42vw;
   }
 
   .works-desktop h1 {
@@ -696,6 +702,10 @@ textarea {
   .form-div {
     width: 54.5%;
     padding: 3vw;
+  }
+
+  .form-div form {
+    gap: 6vw;
   }
 
   input[type="text"],
