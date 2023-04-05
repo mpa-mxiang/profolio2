@@ -442,6 +442,14 @@ textarea {
     position: relative;
   }
 
+  header li:hover {
+    transform: scale(1.5);
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.24);
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 35%;
+  }
+
   .img-container img {
     width: 48vw;
   }
