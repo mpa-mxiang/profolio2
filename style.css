@@ -67,6 +67,10 @@ img {
   width: 100%;
 }
 
+label {
+  display: none;
+}
+
 /* header  */
 header {
   background: #3c3a39;
@@ -185,7 +189,9 @@ footer ul {
 .intro h2 {
   color: #fff5e1;
   font-family: "Roboto", sans-serif;
+  font-size: 7.5vw;
   margin-top: -6vw;
+  white-space: nowrap;
 }
 
 .about .brief p {
@@ -451,7 +457,7 @@ textarea {
     margin: 0 auto;
     background-image: url(./img/Illustration-header.png);
     background-position: right center;
-    background-size: auto 100%;
+    background-size: auto 75%;
     padding-top: 50%;
   }
 
@@ -473,18 +479,14 @@ textarea {
     padding: 0 1vw;
   }
 
-  .intro h1 {
-    color: #ff6800;
-    font-family: "Crete Round", sans-serif;
-    font-weight: 400;
-    font-size: 12vw;
-    padding-right: 29.1vw;
-    align-self: center;
-  }
-
   .intro .intro-text h1 {
     font-size: 5.1vw;
     white-space: nowrap;
+    color: #ff6800;
+    font-family: "Crete Round", sans-serif;
+    font-weight: 400;
+    padding-right: 29.1vw;
+    align-self: center;
   }
 
   .intro h2 {
@@ -620,7 +622,7 @@ textarea {
   }
 
   .works #special button {
-    padding: 3vh 9vw;
+    padding: 1.2vh 9vw;
     bottom: 9.6vw;
     font-size: 1.5vw;
   }
