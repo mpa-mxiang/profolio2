@@ -80,7 +80,7 @@ label {
 header {
   background: #3c3a39;
   width: 100%;
-  height: 15vh;
+  height: 15vw;
   display: flex;
   align-items: center;
 }
@@ -170,6 +170,7 @@ header ul {
   color: #fff;
   font-family: "Poppins", sans-serif;
   margin-top: -3vw;
+  width: 80%;
 }
 
 footer {
@@ -267,6 +268,7 @@ footer ul {
 .works #normal {
   position: relative;
   margin: 2.4vh 1.2vw;
+  margin-bottom: 24px;
 }
 
 .about .list img {
