@@ -9,31 +9,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-    <title>Profolio</title>
+
+
+    <title>Jiachun's Profolio Website</title>
 </head>
 
 <body>
-    <header>
-        <h1>Jiachun</h1>
+    <header tabindex="0">
+        <h1 aria-label="Jiachun" tabindex="1"><a href="#intro">Jiachun</a></h1>
         <nav>
-            <img class="header-mobile" src="./img/bar-icon.png" />
+            <img class="header-mobile" src="./img/bar-icon.png" alt="bar-icon" tabindex="2"/>
             <ul>
-                <li>Profolio</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li><img class="header-desktop" src="./img/mail.png" /></li>
+                <li>
+                    <a href="#works" tabindex="3">Profolio</a>
+                </li>
+                <li>
+                    <a href="#about" tabindex="4">About</a>
+                </li>
+                <li>
+                    <a href="#contact" tabindex="5">Contact</a>
+                </li>
+                <li>
+                    <a href="mailto: jcxiang1230@gmail.com" tabindex="6"><img class="header-desktop" src="./img/mail.png" alt="mail-icon" /></a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <section class="intro">
+    <section class="intro" id="intro" tabindex="7">
         <div class="intro-text">
-            <h1>
+            <h1 aria-label="Hey There. I'm Jiachun" >
                 Hey There. <br />
                 I'm Jiachun
             </h1>
-            <h2>I'm a Software Developer</h2>
-            <p>
+            <h2 aria-label="I'm a Software Developer" >I'm a Software Developer</h2>
+            <p aria-label="I can help you build a product , feature or website Look through some of
+            my work and experience! If you like what you see and have a project you
+            need coded, don’t hestiate to contact me." >
                 I can help you build a product , feature or website Look through some of
                 my work and experience! If you like what you see and have a project you
                 need coded, don’t hestiate to contact me.
@@ -41,40 +53,44 @@
         </div>
         <ul>
             <li>
-                <a href="#" target="_blank"><img src="./img/github.png" /></a>
+                <a href="https://github.com/mpa-mxiang" target="_blank" rel="noopener noreferrer" tabindex="8"><img src="./img/github.png" alt="github-icon" /></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="./img/Icon - Linkedin.png" /></a>
+                <a href="https://www.linkedin.com/in/jiachunlilyxiang/" target="_blank" rel="noopener noreferrer" tabindex="9"><img src="./img/Icon - Linkedin.png" alt="github-icon" /></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="./img/yeah.png" /></a>
+                <a href="#" target="_blank" tabindex="10"><img src="./img/yeah.png" rel="noopener noreferrer" alt="angellist-icon" /></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="./img/twitter.png" /></a>
+                <a href="#" target="_blank" tabindex="11"><img src="./img/twitter.png" rel="noopener noreferrer" alt="twitter-icon" /></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="./img/m.png" /></a>
+                <a href="#" target="_blank" tabindex="12"><img src="./img/m.png" rel="noopener noreferrer" alt="medium-icon" /></a>
             </li>
         </ul>
     </section>
-    <section class="works">
+    <section class="works" id="works">
         <div class="works-desktop">
-            <h1>My Recent works</h1>
+            <h1 aria-label="My Recent works" >My Recent works</h1>
             <hr />
         </div>
         <div id="top-work">
             <div class="img-container">
-                <img src="./img/top-work.png" />
+                <img src="./img/top-work.png" alt="highlight work demo" />
             </div>
             <div class="text-container">
-                <h1>Multi-Post Stories</h1>
-                <p>A daily selection of privately personalized
+                <h1 aria-label="Multi-Post Stories" >Multi-Post Stories</h1>
+                <p aria-label="A daily selection of privately personalized
+                reads; no accounts or sign-ups required. has been
+                the industry's standard dummy text ever since the
+                1500s, when an unknown printer took a standard
+                dummy text." >A daily selection of privately personalized
                     reads; no accounts or sign-ups required. has been
                     the industry's standard dummy text ever since the
                     1500s, when an unknown printer took a standard
                     dummy text.
                 </p>
-                <ul>
+                <ul aria-label="Tech stack: css, html, bootstrap, Ruby" > 
                     <li>
                         css
                     </li>
@@ -89,18 +105,20 @@
                     </li>
                 </ul>
 
-                <button type="button">See project</button>
+                <button type="button" aria-label="press to see the project" tabindex="13">See project</button>
             </div>
         </div>
         <div class="div-container">
-            <div id="special">
-                <img src="./img/work.png" alt="Image">
+            <div id="normal">
+                <img src="./img/work.png" alt="Art Selection Project Image">
                 <div class="div-text">
-                    <h1>Profesional Art Printing Data</h1>
-                    <p>
+                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
+                    <p aria-label="A daily selection of privately personalized reads;
+                    no accounts or sign-ups required. has been the
+                    industry's standard" class="hover">
                         A daily selection of privately personalized reads;
                         no accounts or sign-ups required. has been the
-                        industry's standard
+                        industry's standard.
                     </p>
                     <ul>
                         <li>
@@ -114,16 +132,19 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button">See project</button>
+                <button type="button" aria-label="press to see the project" >See project</button>
+                
             </div>
             <div id="normal">
-                <img src="./img/work.png" alt="Image">
+                <img src="./img/work.png" alt="Art Selection Project Image">
                 <div class="div-text">
-                    <h1>Profesional Art Printing Data</h1>
-                    <p>
+                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
+                    <p aria-label="A daily selection of privately personalized reads;
+                    no accounts or sign-ups required. has been the
+                    industry's standard" class="hover">
                         A daily selection of privately personalized reads;
                         no accounts or sign-ups required. has been the
-                        industry's standard
+                        industry's standard.
                     </p>
                     <ul>
                         <li>
@@ -137,16 +158,19 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button">See project</button>
+                <button type="button" aria-label="press to see the project" >See project</button>
+                
             </div>
             <div id="normal">
-                <img src="./img/work.png" alt="Image">
+                <img src="./img/work.png" alt="Art Selection Project Image">
                 <div class="div-text">
-                    <h1>Profesional Art Printing Data</h1>
-                    <p>
+                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
+                    <p aria-label="A daily selection of privately personalized reads;
+                    no accounts or sign-ups required. has been the
+                    industry's standard" class="hover">
                         A daily selection of privately personalized reads;
                         no accounts or sign-ups required. has been the
-                        industry's standard
+                        industry's standard.
                     </p>
                     <ul>
                         <li>
@@ -160,16 +184,19 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button">See project</button>
+                <button type="button" aria-label="press to see the project" >See project</button>
+                
             </div>
             <div id="normal">
-                <img src="./img/work.png" alt="Image">
+                <img src="./img/work.png" alt="Art Selection Project Image">
                 <div class="div-text">
-                    <h1>Profesional Art Printing Data</h1>
-                    <p>
+                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
+                    <p aria-label="A daily selection of privately personalized reads;
+                    no accounts or sign-ups required. has been the
+                    industry's standard" class="hover">
                         A daily selection of privately personalized reads;
                         no accounts or sign-ups required. has been the
-                        industry's standard
+                        industry's standard.
                     </p>
                     <ul>
                         <li>
@@ -183,16 +210,19 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button">See project</button>
+                <button type="button" aria-label="press to see the project" >See project</button>
+                
             </div>
             <div id="normal">
-                <img src="./img/work.png" alt="Image">
+                <img src="./img/work.png" alt="Art Selection Project Image">
                 <div class="div-text">
-                    <h1>Profesional Art Printing Data</h1>
-                    <p>
+                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
+                    <p aria-label="A daily selection of privately personalized reads;
+                    no accounts or sign-ups required. has been the
+                    industry's standard" class="hover">
                         A daily selection of privately personalized reads;
                         no accounts or sign-ups required. has been the
-                        industry's standard
+                        industry's standard.
                     </p>
                     <ul>
                         <li>
@@ -206,16 +236,19 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button">See project</button>
+                <button type="button" aria-label="press to see the project" >See project</button>
+                
             </div>
             <div id="normal">
-                <img src="./img/work.png" alt="Image">
+                <img src="./img/work.png" alt="Art Selection Project Image">
                 <div class="div-text">
-                    <h1>Profesional Art Printing Data</h1>
-                    <p>
+                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
+                    <p aria-label="A daily selection of privately personalized reads;
+                    no accounts or sign-ups required. has been the
+                    industry's standard" class="hover">
                         A daily selection of privately personalized reads;
                         no accounts or sign-ups required. has been the
-                        industry's standard
+                        industry's standard.
                     </p>
                     <ul>
                         <li>
@@ -229,17 +262,24 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button">See project</button>
+                <button type="button" aria-label="press to see the project" >See project</button>
+                
             </div>
         </div>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="brief">
             <div class="about-text">
-                <h1>About me</h1>
-                <p>Hello I’m a software developer!
+                <h1 aria-label="About me" >About me</h1>
+                <p aria-label="Hello I’m a software developer!
+                I can help you build a product,
+                feature or website Look through
+                some of my work and experience!
+                If you like what you see and
+                have a project you need coded,
+                don’t hestiate to contact me." >Hello I’m a software developer!
                     I can help you build a product,
                     feature or website Look through
                     some of my work and experience!
@@ -247,14 +287,14 @@
                     have a project you need coded,
                     don’t hestiate to contact me.
                 </p>
-                <button type="button">Get My Resume</button>
+                <button type="button" aria-label="click here to see my resume" tabindex="15">Get My Resume</button>
             </div>
         </div>
         <hr />
         <div class="list-div">
             <div class="list">
-                <h1><img src="./img/Rectangle 55.png" />Language</h1>
-                <ul>
+                <h1 aria-label="Language" ><img src="./img/Rectangle 55.png" alt="rhombus-icon" />Language</h1>
+                <ul aria-label="Javascript, Ruby, Html, Css" >
                     <li>
                         Javascript
                     </li>
@@ -270,8 +310,8 @@
                 </ul>
             </div>
             <div class="list">
-                <h1><img src="./img/Rectangle 56.png" />Frameworks</h1>
-                <ul>
+                <h1 aria-label="Frameworks" ><img src="./img/Rectangle 56.png" alt="rectangle-icon" />Frameworks</h1>
+                <ul aria-label="Boostrap, Ruby on rails, RSPec, CapyEara, Selenium">
                     <li>
                         Bootstrap
                     </li>
@@ -290,8 +330,8 @@
                 </ul>
             </div>
             <div class="list">
-                <h1><img src="./img/Rectangle 57.png" />Skills</h1>
-                <ul>
+                <h1 aria-label="skills" ><img src="./img/Rectangle 57.png" alt="circle-icon" />Skills</h1>
+                <ul aria-label="Codekit, Github, Codepen, Gitlab. Terminal" >
                     <li>
                         Codekit
                     </li>
@@ -313,18 +353,24 @@
     </section>
 
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-div">
             <div class="text-div">
-                <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                <h1 aria-label="I'm always interested in hearing about new projects, so if you'd like to chat please get in touch." >I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
                 </h1>
             </div>
             <div class="form-div">
                 <form action="https://formspree.io/f/mjvdabnn" method="POST">
-                    <input id="name" type="text" placeholder="Full name" maxlength="30" name="name" required />
-                    <input id="email" type="email" placeholder="Email address" name="email" required aria-label="email" />
-                    <textarea placeholder="Enter text here" maxlength="500" name="message" required></textarea>
-                    <button type="submit">Get in touch</button>
+                    <label for="name" aria-label="name"
+                >name*</label>
+                    <input aria-label="name" id="name" type="text" placeholder="Full name" maxlength="30" name="name" tabindex="16" required />
+                    <label for="email" aria-label="email"
+                    >email*</label>
+                    <input aria-label="email" id="email" type="email" placeholder="Email address" name="email" required aria-label="email" tabindex="17"/>
+                    <label for="comments" aria-label="comments"
+                    >comments*</label>
+                    <textarea aria-label="comments" placeholder="Enter text here" maxlength="500" name="message" required tabindex="18"></textarea>
+                    <button aria-label="submit" type="submit" value="Submit" tabindex="19">Get in touch</button>
                 </form>
             </div>
         </div>
@@ -333,19 +379,19 @@
     <footer>
         <ul>
             <li>
-                <a href="#" target="_blank"><img src="./img/github-white.png" /></a>
+                <a href="https://github.com/mpa-mxiang" target="_blank" rel="noopener noreferrer" tabindex="20"><img src="./img/github-white.png" alt="github-icon" /></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="./img/linkedin-white.png" /></a>
+                <a href="https://www.linkedin.com/in/jiachunlilyxiang/" target="_blank" rel="noopener noreferrer" tabindex="21"><img src="./img/linkedin-white.png" alt="linkedin-icon" /></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="./img/angellist-white.png" /></a>
+                <a href="#" target="_blank" tabindex="22"><img src="./img/angellist-white.png" alt="angellist-icon" /></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="./img/twitter-white.png" /></a>
+                <a href="#" target="_blank" tabindex="23"><img src="./img/twitter-white.png" alt="twitter-icon" /></a>
             </li>
             <li>
-                <a href="#" target="_blank"><img src="./img/medium-white.png" /></a>
+                <a href="#" target="_blank" tabindex="24"><img src="./img/medium-white.png" alt="medium-icon" /></a>
             </li>
         </ul>
     </footer>

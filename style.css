@@ -29,6 +29,11 @@ ul {
   gap: 6vw;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 button {
   background: #ff6b00;
   color: #fff;
@@ -75,7 +80,7 @@ label {
 header {
   background: #3c3a39;
   width: 100%;
-  height: 15vh;
+  height: 15vw;
   display: flex;
   align-items: center;
 }
@@ -165,6 +170,7 @@ header ul {
   color: #fff;
   font-family: "Poppins", sans-serif;
   margin-top: -3vw;
+  width: 80%;
 }
 
 footer {
@@ -259,17 +265,16 @@ footer ul {
   padding: 0.75em 0.75em;
 }
 
-.works #special,
 .works #normal {
   position: relative;
   margin: 2.4vh 1.2vw;
+  margin-bottom: 24px;
 }
 
 .about .list img {
   width: unset;
 }
 
-.works #special h1,
 .works #normal h1 {
   position: absolute;
   top: 10.2%;
@@ -282,7 +287,6 @@ footer ul {
   text-align: left;
 }
 
-.works #special p,
 .works #normal p {
   position: absolute;
   top: 42%;
@@ -294,7 +298,6 @@ footer ul {
   width: 90%;
 }
 
-.works #special ul,
 .works #normal ul {
   position: absolute;
   bottom: 12%;
@@ -302,7 +305,6 @@ footer ul {
   padding: 0;
 }
 
-.works #special ul li,
 .works #normal ul li {
   display: flex;
   flex-direction: row;
@@ -324,7 +326,6 @@ footer ul {
   font-size: 4.2vw;
 }
 
-.works #special button,
 .works #normal button {
   position: absolute;
   bottom: 1.5%;
@@ -336,10 +337,6 @@ footer ul {
   white-space: nowrap;
   margin-bottom: -0.9em;
   font-size: 6vw;
-}
-
-.works #normal:last-child {
-  margin-bottom: 12em;
 }
 
 /* about */
@@ -400,7 +397,6 @@ textarea {
   height: 27vh;
 }
 
-.works #special .div-text,
 .works #normal .div-text {
   top: 8.4%;
   width: 80%;
@@ -412,9 +408,11 @@ textarea {
   }
 
   header {
-    height: 9vw;
+    height: 6vw;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 999;
   }
 
   header nav {
@@ -437,9 +435,16 @@ textarea {
 
   header li {
     font-family: "Inter", sans-serif;
-    color: #fff;
     font-size: 2.1vw;
     position: relative;
+  }
+
+  header li:hover {
+    transform: scale(1.5);
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.24);
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 35%;
   }
 
   .img-container img {
@@ -462,16 +467,16 @@ textarea {
   }
 
   .intro .intro-text {
-    width: 50%;
+    width: 75%;
     margin-left: 9vw;
-    margin-top: -48vw;
+    margin-top: -45vw;
   }
 
   .works-desktop h1 {
     display: inline-block;
     white-space: nowrap;
     font-size: 3vw;
-    padding-left: 3vw;
+    padding-left: 6vw;
   }
 
   .text-div h1 {
@@ -504,7 +509,7 @@ textarea {
 
   .intro ul {
     flex-direction: column;
-    margin-top: -30vw;
+    margin-top: -27vw;
     gap: 1.5vw;
     margin-left: -1vw;
   }
@@ -517,11 +522,19 @@ textarea {
     margin: 0 auto;
   }
 
-  #top-work,
-  #special,
+  .works #normal:hover .hover {
+    color: transparent;
+  }
+
   #normal {
-    width: 33.33%;
     margin: 0 1em;
+    transition: padding 1s;
+    width: 27vw;
+  }
+
+  .works #normal:hover {
+    cursor: pointer;
+    padding: 10px;
   }
 
   .works-desktop {
@@ -533,7 +546,7 @@ textarea {
     display: inline-block;
     width: 100%;
     flex-grow: 1;
-    margin-right: 9.3%;
+    margin-right: 11.1%;
     margin-left: 2.4%;
   }
 
@@ -551,7 +564,7 @@ textarea {
 
   .about .list h1 {
     padding: 9vw 6vw;
-    font-size: 4.5vw;
+    font-size: 4.2vw;
   }
 
   .about .list:last-child h1 {
@@ -570,7 +583,7 @@ textarea {
   }
 
   .about .list ul li {
-    font-size: 4.2vw;
+    font-size: clamp(1.41rem, 2.5vw, 4rem);
   }
 
   #top-work p,
@@ -626,7 +639,7 @@ textarea {
     bottom: 9.6vw;
     font-size: 1.5vw;
   }
-
+  
   .about .list ul {
     padding-left: 6vw;
   }
@@ -635,14 +648,32 @@ textarea {
     padding-left: 0;
   }
 
-  #special h1,
-  #special p,
-  #special ul {
-    display: none;
+  .div-container #normal button {
+    margin: 0 0 -20px 0;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    padding: 2.4vw 9vw;
+    bottom: 8.8vw;
+    font-size: 1.5vw;
+    display: inline;
+    color: transparent;
+    background-color: transparent;
   }
 
-  .div-container #normal button {
-    display: none;
+  .div-container #normal:hover button {
+    background-color: #ff6b00;
+    color: #fff;
+  }
+
+  .div-container #normal button:hover {
+    background-color: #fff5e1;
+    border: solid 1px #f55800;
+    color: #f55800;
+    font-weight: bold;
+    padding: 2.4vw 9vw;
+    bottom: 8.8vw;
+    font-size: 1.5vw;
   }
 
   .works #normal ul li {
@@ -688,6 +719,10 @@ textarea {
   .form-div {
     width: 54.5%;
     padding: 3vw;
+  }
+
+  .form-div form {
+    gap: 6vw;
   }
 
   input[type="text"],
