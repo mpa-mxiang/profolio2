@@ -485,7 +485,7 @@ textarea {
     display: inline-block;
     white-space: nowrap;
     font-size: 3vw;
-    padding-left: 3vw;
+    padding-left: 6vw;
   }
 
   .text-div h1 {
@@ -547,7 +547,7 @@ textarea {
     display: inline-block;
     width: 100%;
     flex-grow: 1;
-    margin-right: 9.3%;
+    margin-right: 11.1%;
     margin-left: 2.4%;
   }
 
@@ -565,7 +565,7 @@ textarea {
 
   .about .list h1 {
     padding: 9vw 6vw;
-    font-size: 4.5vw;
+    font-size: 4.2vw;
   }
 
   .about .list:last-child h1 {
@@ -584,7 +584,7 @@ textarea {
   }
 
   .about .list ul li {
-    font-size: 4.2vw;
+    font-size: clamp(1.41rem, 2.5vw, 4rem); 
   }
 
   #top-work p,
