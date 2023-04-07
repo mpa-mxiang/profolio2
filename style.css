@@ -467,7 +467,7 @@ textarea {
   }
 
   .intro .intro-text {
-    width: 45%;
+    width: 75%;
     margin-left: 9vw;
     margin-top: -45vw;
   }
@@ -509,7 +509,7 @@ textarea {
 
   .intro ul {
     flex-direction: column;
-    margin-top: -30vw;
+    margin-top: -27vw;
     gap: 1.5vw;
     margin-left: -1vw;
   }
