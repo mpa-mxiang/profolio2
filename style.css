@@ -264,7 +264,6 @@ footer ul {
   padding: 0.75em 0.75em;
 }
 
-.works #special,
 .works #normal {
   position: relative;
   margin: 2.4vh 1.2vw;
@@ -274,7 +273,6 @@ footer ul {
   width: unset;
 }
 
-.works #special h1,
 .works #normal h1 {
   position: absolute;
   top: 10.2%;
@@ -287,7 +285,6 @@ footer ul {
   text-align: left;
 }
 
-.works #special p,
 .works #normal p {
   position: absolute;
   top: 42%;
@@ -299,7 +296,6 @@ footer ul {
   width: 90%;
 }
 
-.works #special ul,
 .works #normal ul {
   position: absolute;
   bottom: 12%;
@@ -307,7 +303,6 @@ footer ul {
   padding: 0;
 }
 
-.works #special ul li,
 .works #normal ul li {
   display: flex;
   flex-direction: row;
@@ -329,7 +324,6 @@ footer ul {
   font-size: 4.2vw;
 }
 
-.works #special button,
 .works #normal button {
   position: absolute;
   bottom: 1.5%;
@@ -401,7 +395,6 @@ textarea {
   height: 27vh;
 }
 
-.works #special .div-text,
 .works #normal .div-text {
   top: 8.4%;
   width: 80%;
@@ -540,7 +533,6 @@ textarea {
   }
 
   #top-work,
-  #special,
   #normal {
     width: 33.33%;
     margin: 0 1em;
@@ -634,19 +626,8 @@ textarea {
     margin-top: 1rem;
   }
 
-  #special,
   #normal {
     width: 27vw;
-  }
-
-  #special img {
-    content: url("./img/spcial-work.png");
-  }
-
-  .works #special button {
-    padding: 3.6vh 9vw;
-    bottom: 10.8vw;
-    font-size: 1.5vw;
   }
 
   .about .list ul {
@@ -655,12 +636,6 @@ textarea {
 
   .about .list:last-child ul {
     padding-left: 0;
-  }
-
-  #special h1,
-  #special p,
-  #special ul {
-    display: none;
   }
 
   .div-container #normal button {
