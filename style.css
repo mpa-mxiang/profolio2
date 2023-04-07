@@ -433,7 +433,7 @@ textarea {
     display: flex;
   }
 
-  header li{
+  header li {
     font-family: "Inter", sans-serif;
     font-size: 2.1vw;
     position: relative;
@@ -522,22 +522,19 @@ textarea {
     margin: 0 auto;
   }
 
-  .works #normal {
-    transition: padding 1s;
-  }
   .works #normal:hover .hover {
     color: transparent;
+  }
+
+  #normal {
+    margin: 0 1em;
+    transition: padding 1s;
+    width: 27vw;
   }
 
   .works #normal:hover {
     cursor: pointer;
     padding: 10px;
-  }
-
-  #top-work,
-  #normal {
-    width: 33.33%;
-    margin: 0 1em;
   }
 
   .works-desktop {
@@ -586,7 +583,7 @@ textarea {
   }
 
   .about .list ul li {
-    font-size: clamp(1.41rem, 2.5vw, 4rem); 
+    font-size: clamp(1.41rem, 2.5vw, 4rem);
   }
 
   #top-work p,
@@ -626,10 +623,6 @@ textarea {
     grid-template-rows: repeat(2, auto);
     align-self: center;
     margin-top: 1rem;
-  }
-
-  #normal {
-    width: 27vw;
   }
 
   .about .list ul {
