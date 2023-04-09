@@ -188,6 +188,18 @@ footer ul {
   margin-top: 1vw;
 }
 
+.works .normal h1 {
+  position: absolute;
+  top: 10.2%;
+  left: 16px;
+  color: white;
+  font-family: "Crete Round", sans-serif;
+  font-size: 8vw;
+  line-height: 44px;
+  white-space: break-spaces;
+  text-align: left;
+}
+
 .about .list:last-child h1 {
   padding-left: 3em;
 }
@@ -218,7 +230,7 @@ footer ul {
   padding: 0;
 }
 
-.about .list:last-child ul {
+.about .list-div {
   margin-bottom: 6rem;
 }
 
@@ -240,10 +252,41 @@ footer ul {
   color: #091e42;
 }
 
+.works .normal p {
+  position: absolute;
+  top: 42%;
+  left: 1.2em;
+  color: white;
+  font-size: 4vw;
+  font-family: "Crete Round", sans-serif;
+  line-height: 1.8em;
+  width: 90%;
+}
+
 #top-work p {
   font-family: "Inter", sans-serif;
   line-height: 1.5em;
   color: #091e42;
+}
+
+.works .normal ul {
+  position: absolute;
+  bottom: 12%;
+  left: 1em;
+  padding: 0;
+}
+
+.works .normal ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.2vh 3vw;
+  background: rgba(255, 255, 255, 0.24);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.5vw;
+  color: #fff;
 }
 
 #top-work ul {
@@ -273,49 +316,6 @@ footer ul {
 
 .about .list img {
   width: unset;
-}
-
-.works .normal h1 {
-  position: absolute;
-  top: 10.2%;
-  left: 16px;
-  color: white;
-  font-family: "Crete Round", sans-serif;
-  font-size: 8vw;
-  line-height: 44px;
-  white-space: break-spaces;
-  text-align: left;
-}
-
-.works .normal p {
-  position: absolute;
-  top: 42%;
-  left: 1.2em;
-  color: white;
-  font-size: 4vw;
-  font-family: "Crete Round", sans-serif;
-  line-height: 1.8em;
-  width: 90%;
-}
-
-.works .normal ul {
-  position: absolute;
-  bottom: 12%;
-  left: 1em;
-  padding: 0;
-}
-
-.works .normal ul li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1.2vh 3vw;
-  background: rgba(255, 255, 255, 0.24);
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 4.5vw;
-  color: #fff;
 }
 
 .about .brief button {
@@ -571,6 +571,13 @@ textarea {
     padding-left: 9vw;
   }
 
+  .works .normal .div-text h1 {
+    margin-top: -29.1vw;
+    font-size: 2.7vw;
+    line-height: 3vw;
+    left: 2.1vw;
+  }
+
   #top-work h1 {
     font-size: 3vw;
   }
@@ -584,6 +591,12 @@ textarea {
 
   .about .list ul li {
     font-size: clamp(1.41rem, 2.5vw, 4rem);
+  }
+
+  .works .normal ul li {
+    padding: 1.2vh 1.2vw;
+    font-size: 1.5vw;
+    margin-bottom: -3vw;
   }
 
   #top-work p,
@@ -601,36 +614,6 @@ textarea {
     font-size: 1.5vw;
     width: 15vw;
     margin-top: 6vw;
-  }
-
-  #top-work button {
-    width: 15vw;
-    font-size: 1.8vw;
-  }
-
-  .img-container {
-    padding-left: 4.2vw;
-  }
-
-  .text-container {
-    padding-left: 3vw;
-    margin-top: -2.7vw;
-  }
-
-  .div-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    align-self: center;
-    margin-top: 1rem;
-  }
-
-  .about .list ul {
-    padding-left: 6vw;
-  }
-
-  .about .list:last-child ul {
-    padding-left: 0;
   }
 
   .div-container .normal button {
@@ -661,10 +644,34 @@ textarea {
     font-size: 1.5vw;
   }
 
-  .works .normal ul li {
-    padding: 1.2vh 1.2vw;
-    font-size: 1.5vw;
-    margin-bottom: -3vw;
+  #top-work button {
+    width: 15vw;
+    font-size: 1.8vw;
+  }
+
+  .img-container {
+    padding-left: 4.2vw;
+  }
+
+  .text-container {
+    padding-left: 3vw;
+    margin-top: -2.7vw;
+  }
+
+  .div-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  .about .list ul {
+    padding-left: 6vw;
+  }
+
+  .about .list:last-child ul {
+    padding-left: 0;
   }
 
   .about .brief {
@@ -724,23 +731,6 @@ textarea {
     position: sticky;
     width: 100%;
     margin-top: 8.1vw;
-  }
-
-  .works .normal .div-text h1 {
-    margin-top: -29.1vw;
-    font-size: 2.7vw;
-    line-height: 3vw;
-    left: 2.1vw;
-  }
-
-  .works .normal .div-text p {
-    margin-top: -22.2vw;
-    font-size: 1.2vw;
-    margin-left: 0.3vw;
-    line-height: 2vw;
-    font-family: "Inter", sans-serif;
-    top: 57%;
-    left: 2vw;
   }
 
   .works .normal .div-text ul {
