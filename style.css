@@ -31,7 +31,7 @@ a {
   z-index: 9999;
   position: fixed;
   right: 2rem;
-  top: 1rem;
+  top: 0;
   padding: 2rem;
 }
 
@@ -131,7 +131,8 @@ header h1 {
   display: flex;
   gap: 54vw;
   align-items: center;
-  padding: 1.5em;
+  padding: 1.5rem;
+  margin-bottom: 0;
 }
 
 header nav {
@@ -160,11 +161,11 @@ header nav {
 }
 
 #menu {
-  transition: transform 1s ease-in-out;
+  transition: transform 800ms ease-in-out;
   position: fixed;
   display: flex;
-    flex-direction: column;
-    padding: 5rem 2rem;
+  flex-direction: column;
+  padding: 5rem 2rem;
 }
 
 #menu {
@@ -183,7 +184,7 @@ header nav {
 }
 
 #menu li a {
-  color:hsla(40, 100%, 94%, 1);
+  color: hsla(40, 100%, 94%, 1);
 }
 
 #top-work ul li {
@@ -351,7 +352,7 @@ footer ul {
   left: 1.2em;
   color: white;
   font-size: 4vw;
-  font-family: "Crete Round", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.8em;
   width: 90%;
 }
@@ -477,7 +478,6 @@ textarea {
     height: 6vw;
     display: flex;
     align-items: center;
-    position: fixed;
     z-index: 999;
   }
 
@@ -492,10 +492,23 @@ textarea {
 
   header h1 {
     font-size: 2.7vw;
-    padding-top: 5%;
+    padding-top: 1vw;
+  }
+
+  #toggle {
+    display: none;
   }
 
   #menu {
+    flex-direction: row;
+    transform: none;
+    height: 0;
+    width: fit-content;
+    margin-left: 58vw;
+    margin-top: -5vw;
+  }
+
+  .menu-active {
     display: flex;
     background-color: #3c3a39;
     padding: 0;
@@ -635,6 +648,12 @@ textarea {
     justify-content: space-between;
   }
 
+  .works .normal p {
+    top: -16vw;
+    font-size: 1.21vw;
+    left: 2.1vw;
+  }
+
   .about .brief h1 {
     font-size: 9vw;
     padding-top: 24vh;
@@ -651,7 +670,7 @@ textarea {
   }
 
   .works .normal .div-text h1 {
-    margin-top: -29.1vw;
+    margin-top: -22.1vw;
     font-size: 2.7vw;
     line-height: 3vw;
     left: 2.1vw;
@@ -685,25 +704,25 @@ textarea {
     margin-top: 6vw;
   }
 
-  .div-container .normal button {
+  .div-container .normal .hover-btn {
     margin: 0 0 -20px 0;
     position: absolute;
     left: 0%;
     width: 100%;
     padding: 2.4vw 9vw;
-    bottom: 8.8vw;
+    bottom: 0.8vw;
     font-size: 1.5vw;
     display: inline;
     color: transparent;
     background-color: transparent;
   }
 
-  .div-container .normal:hover button {
+  .div-container .normal:hover .hover-btn {
     background-color: #ff6b00;
     color: #fff;
   }
 
-  .div-container .normal button:hover {
+  .div-container .normal .hover-btn:hover {
     background-color: #fff5e1;
     border: solid 1px #f55800;
     color: #f55800;
@@ -814,13 +833,12 @@ textarea {
   .works .normal .div-text {
     position: sticky;
     width: 100%;
-    margin-top: 8.1vw;
   }
 
   .works .normal .div-text ul {
     margin-bottom: 13.2vw;
     gap: 1.5vw;
-    bottom: 10.2%;
+    top: -7vw;
     left: 2.1vw;
   }
 }
