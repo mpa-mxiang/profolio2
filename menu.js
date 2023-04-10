@@ -1,6 +1,8 @@
-const menuToggle = document.getElementById('menu-toggle');
-const nav = document.querySelector('nav');
-
-menuToggle.addEventListener('click', function() {
-  nav.classList.toggle('show');
-});
+function toggleMenu() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

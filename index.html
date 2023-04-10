@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-
-
+    <script src="menu.js"></script>
     <title>Jiachun's Profolio Website</title>
 </head>
 
@@ -18,8 +17,8 @@
     <header tabindex="0">
         <h1 aria-label="Jiachun" tabindex="1"><a href="#intro">Jiachun</a></h1>
         <nav>
-            <img class="header-mobile" src="./img/bar-icon.png" alt="bar-icon" tabindex="2"/>
-            <ul>
+            <a onclick="toggleMenu()" ><img class="header-mobile" src="./img/bar-icon.png" alt="bar-icon" tabindex="2" /></a>
+            <ul id="menu">
                 <li>
                     <a href="#works" tabindex="3">Profolio</a>
                 </li>

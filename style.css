@@ -100,7 +100,27 @@ header nav {
   padding-top: 1.8vw;
 }
 
-header ul {
+#menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  padding: 0;
+}
+
+#menu li {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #6f6c6B;
+  background: #3c3a39;
+  font-family: 'Inter',sans-serif;
+  font-size: 32px;
+}
+
+#menu li:last-child {
   display: none;
 }
 
@@ -429,7 +449,7 @@ textarea {
     padding-top: 5%;
   }
 
-  header ul {
+  #menu {
     display: flex;
   }
 
