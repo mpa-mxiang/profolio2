@@ -710,7 +710,7 @@ textarea {
     left: 0%;
     width: 100%;
     padding: 2.4vw 9vw;
-    bottom: 0.8vw;
+    bottom: 1vw;
     font-size: 1.5vw;
     display: inline;
     color: transparent;
@@ -728,8 +728,9 @@ textarea {
     color: #f55800;
     font-weight: bold;
     padding: 2.4vw 9vw;
-    bottom: 8.8vw;
     font-size: 1.5vw;
+    bottom: 1vw;
+    transition: padding 1s;
   }
 
   #top-work button {
@@ -754,19 +755,8 @@ textarea {
     margin-top: 1rem;
   }
 
-  #special,
   #normal {
     width: 27vw;
-  }
-
-  #special img {
-    content: url("./img/spcial-work.png");
-  }
-
-  .works #special button {
-    padding: 1.2vh 9vw;
-    bottom: 9.6vw;
-    font-size: 1.5vw;
   }
 
   .about .list ul {
