@@ -188,6 +188,18 @@ footer ul {
   margin-top: 1vw;
 }
 
+.works .normal h1 {
+  position: absolute;
+  top: 10.2%;
+  left: 16px;
+  color: white;
+  font-family: "Crete Round", sans-serif;
+  font-size: 8vw;
+  line-height: 44px;
+  white-space: break-spaces;
+  text-align: left;
+}
+
 .about .list:last-child h1 {
   padding-left: 3em;
 }
@@ -218,7 +230,7 @@ footer ul {
   padding: 0;
 }
 
-.about .list:last-child ul {
+.about .list-div {
   margin-bottom: 6rem;
 }
 
@@ -240,10 +252,41 @@ footer ul {
   color: #091e42;
 }
 
+.works .normal p {
+  position: absolute;
+  top: 42%;
+  left: 1.2em;
+  color: white;
+  font-size: 4vw;
+  font-family: "Crete Round", sans-serif;
+  line-height: 1.8em;
+  width: 90%;
+}
+
 #top-work p {
   font-family: "Inter", sans-serif;
   line-height: 1.5em;
   color: #091e42;
+}
+
+.works .normal ul {
+  position: absolute;
+  bottom: 12%;
+  left: 1em;
+  padding: 0;
+}
+
+.works .normal ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.2vh 3vw;
+  background: rgba(255, 255, 255, 0.24);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.5vw;
+  color: #fff;
 }
 
 #top-work ul {
@@ -265,7 +308,7 @@ footer ul {
   padding: 0.75em 0.75em;
 }
 
-.works #normal {
+.works .normal {
   position: relative;
   margin: 2.4vh 1.2vw;
   margin-bottom: 24px;
@@ -273,49 +316,6 @@ footer ul {
 
 .about .list img {
   width: unset;
-}
-
-.works #normal h1 {
-  position: absolute;
-  top: 10.2%;
-  left: 16px;
-  color: white;
-  font-family: "Crete Round", sans-serif;
-  font-size: 8vw;
-  line-height: 44px;
-  white-space: break-spaces;
-  text-align: left;
-}
-
-.works #normal p {
-  position: absolute;
-  top: 42%;
-  left: 1.2em;
-  color: white;
-  font-size: 4vw;
-  font-family: "Crete Round", sans-serif;
-  line-height: 1.8em;
-  width: 90%;
-}
-
-.works #normal ul {
-  position: absolute;
-  bottom: 12%;
-  left: 1em;
-  padding: 0;
-}
-
-.works #normal ul li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1.2vh 3vw;
-  background: rgba(255, 255, 255, 0.24);
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 4.5vw;
-  color: #fff;
 }
 
 .about .brief button {
@@ -326,7 +326,7 @@ footer ul {
   font-size: 4.2vw;
 }
 
-.works #normal button {
+.works .normal button {
   position: absolute;
   bottom: 1.5%;
   width: 100%;
@@ -397,7 +397,7 @@ textarea {
   height: 27vh;
 }
 
-.works #normal .div-text {
+.works .normal .div-text {
   top: 8.4%;
   width: 80%;
 }
@@ -522,17 +522,17 @@ textarea {
     margin: 0 auto;
   }
 
-  .works #normal:hover .hover {
+  .works .normal:hover .hover {
     color: transparent;
   }
 
-  #normal {
+  .normal {
     margin: 0 1em;
     transition: padding 1s;
     width: 27vw;
   }
 
-  .works #normal:hover {
+  .works .normal:hover {
     cursor: pointer;
     padding: 10px;
   }
@@ -571,6 +571,13 @@ textarea {
     padding-left: 9vw;
   }
 
+  .works .normal .div-text h1 {
+    margin-top: -29.1vw;
+    font-size: 2.7vw;
+    line-height: 3vw;
+    left: 2.1vw;
+  }
+
   #top-work h1 {
     font-size: 3vw;
   }
@@ -584,6 +591,12 @@ textarea {
 
   .about .list ul li {
     font-size: clamp(1.41rem, 2.5vw, 4rem);
+  }
+
+  .works .normal ul li {
+    padding: 1.2vh 1.2vw;
+    font-size: 1.5vw;
+    margin-bottom: -3vw;
   }
 
   #top-work p,
@@ -601,6 +614,34 @@ textarea {
     font-size: 1.5vw;
     width: 15vw;
     margin-top: 6vw;
+  }
+
+  .div-container .normal button {
+    margin: 0 0 -20px 0;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    padding: 2.4vw 9vw;
+    bottom: 8.8vw;
+    font-size: 1.5vw;
+    display: inline;
+    color: transparent;
+    background-color: transparent;
+  }
+
+  .div-container .normal:hover button {
+    background-color: #ff6b00;
+    color: #fff;
+  }
+
+  .div-container .normal button:hover {
+    background-color: #fff5e1;
+    border: solid 1px #f55800;
+    color: #f55800;
+    font-weight: bold;
+    padding: 2.4vw 9vw;
+    bottom: 8.8vw;
+    font-size: 1.5vw;
   }
 
   #top-work button {
@@ -646,40 +687,6 @@ textarea {
 
   .about .list:last-child ul {
     padding-left: 0;
-  }
-
-  .div-container #normal button {
-    margin: 0 0 -20px 0;
-    position: absolute;
-    left: 0%;
-    width: 100%;
-    padding: 2.4vw 9vw;
-    bottom: 8.8vw;
-    font-size: 1.5vw;
-    display: inline;
-    color: transparent;
-    background-color: transparent;
-  }
-
-  .div-container #normal:hover button {
-    background-color: #ff6b00;
-    color: #fff;
-  }
-
-  .div-container #normal button:hover {
-    background-color: #fff5e1;
-    border: solid 1px #f55800;
-    color: #f55800;
-    font-weight: bold;
-    padding: 2.4vw 9vw;
-    bottom: 8.8vw;
-    font-size: 1.5vw;
-  }
-
-  .works #normal ul li {
-    padding: 1.2vh 1.2vw;
-    font-size: 1.5vw;
-    margin-bottom: -3vw;
   }
 
   .about .brief {
@@ -735,30 +742,13 @@ textarea {
     margin-top: 12vh;
   }
 
-  .works #normal .div-text {
+  .works .normal .div-text {
     position: sticky;
     width: 100%;
     margin-top: 8.1vw;
   }
 
-  .works #normal .div-text h1 {
-    margin-top: -29.1vw;
-    font-size: 2.7vw;
-    line-height: 3vw;
-    left: 2.1vw;
-  }
-
-  .works #normal .div-text p {
-    margin-top: -22.2vw;
-    font-size: 1.2vw;
-    margin-left: 0.3vw;
-    line-height: 2vw;
-    font-family: "Inter", sans-serif;
-    top: 57%;
-    left: 2vw;
-  }
-
-  .works #normal .div-text ul {
+  .works .normal .div-text ul {
     margin-bottom: 13.2vw;
     gap: 1.5vw;
     bottom: 10.2%;
