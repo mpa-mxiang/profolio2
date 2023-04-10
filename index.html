@@ -9,30 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-    <script src="menu.js"></script>
     <title>Jiachun's Profolio Website</title>
 </head>
 
 <body>
+    <nav>
+        <button id="toggle" aria-controls="menu" >
+        </button>
+        <ul id="menu" class="menu-inactive">
+            <li>
+                 <a class="nav-item" href="#works" tabindex="3">Profolio</a></li>
+            <li class="nav-item">
+                 <a class="nav-item" href="#about" tabindex="4">About</a></li>
+            <li>
+                 <a class="nav-item" href="#contact" tabindex="5">Contact</a></li>
+            <li >
+                <a href="mailto: jcxiang1230@gmail.com" tabindex="6"><img class="header-desktop" src="./img/mail.png" alt="mail-icon" /></a>
+            </li>
+        </ul>
+    </nav>
+    <div id="wrapper">
     <header tabindex="0">
         <h1 aria-label="Jiachun" tabindex="1"><a href="#intro">Jiachun</a></h1>
-        <nav>
-            <a onclick="toggleMenu()" ><img class="header-mobile" src="./img/bar-icon.png" alt="bar-icon" tabindex="2" /></a>
-            <ul id="menu">
-                <li>
-                    <a href="#works" tabindex="3">Profolio</a>
-                </li>
-                <li>
-                    <a href="#about" tabindex="4">About</a>
-                </li>
-                <li>
-                    <a href="#contact" tabindex="5">Contact</a>
-                </li>
-                <li>
-                    <a href="mailto: jcxiang1230@gmail.com" tabindex="6"><img class="header-desktop" src="./img/mail.png" alt="mail-icon" /></a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <section class="intro" id="intro" tabindex="7">
@@ -89,7 +87,7 @@
                     1500s, when an unknown printer took a standard
                     dummy text.
                 </p>
-                <ul aria-label="Tech stack: css, html, bootstrap, Ruby" > 
+                <ul aria-label="Tech stack: css, html, bootstrap, Ruby" >
                     <li>
                         css
                     </li>
@@ -132,7 +130,7 @@
                     </ul>
                 </div>
                 <button type="button" aria-label="press to see the project" >See project</button>
-                
+
             </div>
             <div class="normal">
                 <img src="./img/work.png" alt="Art Selection Project Image">
@@ -158,7 +156,7 @@
                     </ul>
                 </div>
                 <button type="button" aria-label="press to see the project" >See project</button>
-                
+
             </div>
             <div class="normal">
                 <img src="./img/work.png" alt="Art Selection Project Image">
@@ -184,7 +182,7 @@
                     </ul>
                 </div>
                 <button type="button" aria-label="press to see the project" >See project</button>
-                
+
             </div>
             <div class="normal">
                 <img src="./img/work.png" alt="Art Selection Project Image">
@@ -210,7 +208,7 @@
                     </ul>
                 </div>
                 <button type="button" aria-label="press to see the project" >See project</button>
-                
+
             </div>
             <div class="normal">
                 <img src="./img/work.png" alt="Art Selection Project Image">
@@ -236,7 +234,7 @@
                     </ul>
                 </div>
                 <button type="button" aria-label="press to see the project" >See project</button>
-                
+
             </div>
             <div class="normal">
                 <img src="./img/work.png" alt="Art Selection Project Image">
@@ -262,7 +260,7 @@
                     </ul>
                 </div>
                 <button type="button" aria-label="press to see the project" >See project</button>
-                
+
             </div>
         </div>
         </div>
@@ -394,7 +392,8 @@
             </li>
         </ul>
     </footer>
-
+</div>
+    <script src="menu.js"></script>
 </body>
 
 </html>
