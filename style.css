@@ -103,7 +103,7 @@ header nav {
 #menu {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 2em;
   left: 0;
   width: 100%;
   background-color: white;
@@ -111,13 +111,42 @@ header nav {
   padding: 0;
 }
 
+.works .normal ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.2vh 3vw;
+  background: rgba(255, 255, 255, 0.24);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.5vw;
+  color: #fff;
+}
+
+.about .list ul li {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  line-height: 6vh;
+}
+
 #menu li {
   display: block;
   padding: 10px;
-  border-bottom: 1px solid #6f6c6B;
+  border-bottom: 1px solid #6f6c6b;
   background: #3c3a39;
-  font-family: 'Inter',sans-serif;
   font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+#top-work ul li {
+  box-sizing: border-box;
+  border: 1px solid #8993a4;
+  align-items: center;
+  padding: 0.75em 0.75em;
 }
 
 #menu li:last-child {
@@ -296,36 +325,9 @@ footer ul {
   padding: 0;
 }
 
-.works .normal ul li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1.2vh 3vw;
-  background: rgba(255, 255, 255, 0.24);
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 4.5vw;
-  color: #fff;
-}
-
 #top-work ul {
   margin-left: -2.7rem;
   gap: 12px;
-}
-
-.about .list ul li {
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 22px;
-  line-height: 6vh;
-}
-
-#top-work ul li {
-  box-sizing: border-box;
-  border: 1px solid #8993a4;
-  align-items: center;
-  padding: 0.75em 0.75em;
 }
 
 .works .normal {
@@ -457,20 +459,29 @@ textarea {
     padding: 0;
   }
 
-  header li {
-    font-family: "Inter", sans-serif;
-    font-size: 2.1vw;
-    position: relative;
-    border-bottom: none;
-    padding: 0;
-  }
-
   header li:hover {
     transform: scale(1.5);
     margin: 0;
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.24);
     background-color: rgba(255, 255, 255, 0.24);
     border-radius: 35%;
+  }
+
+  .about .list ul li {
+    font-size: clamp(1.41rem, 2.5vw, 4rem);
+  }
+
+  .works .normal ul li {
+    padding: 1.2vh 1.2vw;
+    font-size: 1.5vw;
+    margin-bottom: -3vw;
+  }
+
+  header #menu li {
+    font-size: 2.1vw;
+    position: relative;
+    border-bottom: none;
+    padding: 0;
   }
 
   .img-container img {
@@ -615,16 +626,6 @@ textarea {
     width: 84%;
   }
 
-  .about .list ul li {
-    font-size: clamp(1.41rem, 2.5vw, 4rem);
-  }
-
-  .works .normal ul li {
-    padding: 1.2vh 1.2vw;
-    font-size: 1.5vw;
-    margin-bottom: -3vw;
-  }
-
   #top-work p,
   #top-work ul li {
     font-size: 1.5vw;
@@ -706,7 +707,7 @@ textarea {
     bottom: 9.6vw;
     font-size: 1.5vw;
   }
-  
+
   .about .list ul {
     padding-left: 6vw;
   }
