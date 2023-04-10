@@ -486,6 +486,23 @@ textarea {
     padding-top: 0.9vw;
   }
 
+  .navbar {
+    display: flex;
+    background-color: #3c3a39;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+  }
+
+  .nav-heading {
+    margin: 0;
+    position: absolute;
+    top: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    left: 1rem;
+  }
+
   header .header-mobile {
     display: none;
   }
