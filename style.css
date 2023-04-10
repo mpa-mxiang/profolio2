@@ -451,12 +451,18 @@ textarea {
 
   #menu {
     display: flex;
+    position: unset;
+    top: 0;
+    background-color: #3c3a39;
+    padding: 0;
   }
 
   header li {
     font-family: "Inter", sans-serif;
     font-size: 2.1vw;
     position: relative;
+    border-bottom: none;
+    padding: 0;
   }
 
   header li:hover {
