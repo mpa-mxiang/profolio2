@@ -31,7 +31,7 @@ a {
   z-index: 9999;
   position: fixed;
   right: 2rem;
-  top: 0;
+  top: 0.25rem;
   padding: 2rem;
 }
 
@@ -140,6 +140,16 @@ header nav {
   padding-top: 1.8vw;
 }
 
+.navbar {
+  display: flex;
+  background-color: #3c3a39;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 44;
+  justify-content: space-between;
+}
+
 .works .normal ul li {
   display: flex;
   flex-direction: row;
@@ -196,6 +206,18 @@ header nav {
 
 #menu li:last-child {
   display: none;
+}
+
+.logo {
+  display: flex;
+  width: 90px;
+  align-items: center;
+}
+
+.logo h1 {
+  padding-left: 20px;
+  margin: 0;
+  color: #fff;
 }
 
 /* intro */
@@ -486,14 +508,6 @@ textarea {
     padding-top: 0.9vw;
   }
 
-  .navbar {
-    display: flex;
-    background-color: #3c3a39;
-    height: 150px;
-    width: 100%;
-    position: fixed;
-  }
-
   .nav-heading {
     margin: 0;
     position: absolute;
@@ -501,6 +515,21 @@ textarea {
     font-size: 2rem;
     color: #fff;
     left: 1rem;
+  }
+
+  #menu li a {
+    font-family: Inter;
+    color: #fff;
+font-size: 15px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+  }
+
+  #menu li {
+    display: flex;
+    border-bottom: none;
   }
 
   header .header-mobile {
@@ -521,14 +550,12 @@ textarea {
     transform: none;
     height: 0;
     width: fit-content;
-    margin-left: 58vw;
-    margin-top: -5vw;
+    padding: 20px 100px 0 0;
   }
 
   .menu-active {
     display: flex;
     background-color: #3c3a39;
-    padding: 0;
   }
 
   header li:hover {
@@ -549,11 +576,10 @@ textarea {
     margin-bottom: -3vw;
   }
 
-  header #menu li {
+  #menu li {
     font-size: 2.1vw;
     position: relative;
     border-bottom: none;
-    padding: 0;
   }
 
   .img-container img {
@@ -567,18 +593,24 @@ textarea {
     padding: 0;
   }
 
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   section.intro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     margin: 0 auto;
     background-image: url(./img/Illustration-header.png);
     background-position: right center;
     background-size: auto 75%;
-    padding-top: 50%;
   }
 
   .intro .intro-text {
     width: 75%;
     margin-left: 9vw;
-    margin-top: -45vw;
   }
 
   .works-desktop h1 {
