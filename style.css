@@ -89,7 +89,7 @@ ul {
   gap: 6vw;
 }
 
-.about .brief button {
+.about .brief #about-btn {
   margin-left: 11.4vw;
   width: 42vw;
   height: 7.8vh;
@@ -97,7 +97,7 @@ ul {
   font-size: 4.2vw;
 }
 
-.works .normal button {
+.works .normal .normal-btn {
   position: absolute;
   bottom: 1.5%;
   width: 100%;
@@ -110,31 +110,31 @@ ul {
   font-size: 6vw;
 }
 
-button:not(#toggle, .menu-close) {
+button {
   background: #ff6b00;
   color: #fff;
   font-family: "Inter", sans-serif;
-  padding: 1em;
   white-space: nowrap;
-  width: 8em;
   letter-spacing: 0.03em;
   font-weight: 700;
   display: flex;
   align-items: center;
   border: 0;
+  padding: 1em;
+  width: 8em;
 }
 
-button:not(#toggle,.menu-close):hover {
+button:hover {
   color: #f55800;
   background: #fff5e1;
 }
 
-button:not(#toggle,.menu-close):active {
+button:active {
   color: #f4f1f0;
   background: #e05304;
 }
 
-button:not(#toggle,.menu-close):disabled {
+button:disabled {
   color: #f4f1f0;
   background: #5b5957;
 }
@@ -323,10 +323,6 @@ footer ul {
   text-align: left;
 }
 
-.about .list:last-child h1 {
-  padding-left: 3em;
-}
-
 .intro h2 {
   color: #fff5e1;
   font-family: "Roboto", sans-serif;
@@ -340,10 +336,10 @@ footer ul {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5em;
   color: #f4f5f7;
-  padding: 1vh 12vw;
+  padding: 1vh 7vw;
 }
 
 .about .list ul {
@@ -690,7 +686,7 @@ textarea {
   }
 
   .about .list:last-child h1 {
-    padding-left: 9vw;
+    padding-left: 3vw;
   }
 
   .works .normal .div-text h1 {
@@ -710,11 +706,11 @@ textarea {
     font-size: 1.5vw;
   }
 
-  .about .brief button {
+  .about .brief #about-btn {
     margin-left: 7.2vw;
     font-size: 1.5vw;
     width: 15vw;
-    margin-top: 6vw;
+    margin-top: 9vw;
   }
 
   .div-container .normal .hover-btn {
