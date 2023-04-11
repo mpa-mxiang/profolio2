@@ -16,6 +16,11 @@ function toggleMenu() {
   }
 }
 
+closeBtn.addEventListener('click', () => {
+  toggleMenu();
+  console.log('Hi,');
+});
+
 toggle.addEventListener('click', () => {
   toggleMenu();
 });
