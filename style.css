@@ -682,6 +682,7 @@ textarea {
 
   #top-work h1 {
     font-size: 3vw;
+    text-align: left;
   }
 
   .form-div button {
@@ -752,7 +753,7 @@ textarea {
   }
 
   .about .list ul {
-    padding-left: 6vw;
+    align-items: normal;
   }
 
   .about .list:last-child ul {
