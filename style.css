@@ -545,6 +545,10 @@ text-align: center;
     display: none;
   }
 
+.navbar {
+  justify-content: flex-end;
+}
+
   #menu {
     flex-direction: row;
     transform: none;
