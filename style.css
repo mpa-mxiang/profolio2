@@ -38,6 +38,20 @@ a {
 .toggle-active {
   background: url(./img/close-icon.png) no-repeat;
   z-index: 888;
+  display: none;
+}
+
+.menu-close {
+  display: none;
+  width: 1rem;
+  height: 1rem;
+  z-index: 9999;
+  position: fixed;
+  right: 1rem;
+  top: 1.25rem;
+  padding: 2rem;
+  border: 0;
+  background: url(./img/close-icon.png) no-repeat;  ;
 }
 
 .menu-active {
@@ -75,7 +89,7 @@ ul {
   gap: 6vw;
 }
 
-button:not(#toggle) {
+button:not(#toggle, .menu-close) {
   background: #ff6b00;
   color: #fff;
   font-family: "Inter", sans-serif;
@@ -89,17 +103,17 @@ button:not(#toggle) {
   border: 0;
 }
 
-button:not(#toggle):hover {
+button:not(#toggle,.menu-close):hover {
   color: #f55800;
   background: #fff5e1;
 }
 
-button:not(#toggle):active {
+button:not(#toggle,.menu-close):active {
   color: #f4f1f0;
   background: #e05304;
 }
 
-button:not(#toggle):disabled {
+button:not(#toggle,.menu-close):disabled {
   color: #f4f1f0;
   background: #5b5957;
 }
