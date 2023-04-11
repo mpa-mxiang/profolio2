@@ -6,8 +6,10 @@ const navItem = document.querySelectorAll('.nav-item');
 function toggleMenu() {
   if (menu.className === 'menu-inactive') {
     menu.className = ('menu-active');
+    toggle.className = ('toggle-active');
   } else {
     menu.className = ('menu-inactive');
+    toggle.className = ('');
   }
 }
 
@@ -21,6 +23,8 @@ wrapper.addEventListener('click', () => {
   }
 });
 
-navItem.forEach((navItem) => navItem.addEventListener('click', () => {
-  toggleMenu();
-}));
+navItem.forEach((navItem) => {
+  return navItem.addEventListener('click', () => {
+    toggleMenu();
+  });
+});

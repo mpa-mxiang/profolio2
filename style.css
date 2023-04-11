@@ -32,6 +32,12 @@ a {
   right: 2rem;
   top: 0.25rem;
   padding: 2rem;
+  border: 0;
+}
+
+.toggle-active {
+  background: url(./img/close-icon.png) no-repeat;
+  z-index: 888;
 }
 
 .menu-active {
@@ -69,7 +75,7 @@ ul {
   gap: 6vw;
 }
 
-button {
+button:not(#toggle) {
   background: #ff6b00;
   color: #fff;
   font-family: "Inter", sans-serif;
@@ -83,17 +89,17 @@ button {
   border: 0;
 }
 
-button:hover {
+button:not(#toggle):hover {
   color: #f55800;
   background: #fff5e1;
 }
 
-button:active {
+button:not(#toggle):active {
   color: #f4f1f0;
   background: #e05304;
 }
 
-button:disabled {
+button:not(#toggle):disabled {
   color: #f4f1f0;
   background: #5b5957;
 }
@@ -195,7 +201,7 @@ label {
   background-image: url("./img/intro-mobile.png");
   background-position: right bottom;
   background-repeat: no-repeat;
-  height: clamp(37.2rem, 168vh, 84rem);
+  height: 78vh;
   display: flex;
   flex-direction: column;
   padding: 5rem 1rem;
@@ -278,7 +284,6 @@ footer ul {
   color: white;
   font-family: "Crete Round", sans-serif;
   font-size: 8vw;
-  line-height: 44px;
   white-space: break-spaces;
   text-align: left;
 }
@@ -344,7 +349,7 @@ footer ul {
 
 .works .normal p {
   position: absolute;
-  top: 42%;
+  top: 36%;
   left: 1.2em;
   color: white;
   font-size: 4vw;
@@ -574,11 +579,12 @@ textarea {
     margin: 0 auto;
     background-image: url(./img/Illustration-header.png);
     background-position: right center;
-    background-size: auto 50%;
+    background-size: auto 75%;
+    height: 144vh;
   }
 
   .intro .intro-text {
-    width: 75%;
+    width: 69%;
     margin-left: 9vw;
   }
 
