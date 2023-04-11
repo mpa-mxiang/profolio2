@@ -51,7 +51,7 @@ a {
   top: 1.25rem;
   padding: 2rem;
   border: 0;
-  background: url(./img/close-icon.png) no-repeat;  ;
+  background: url(./img/close-icon.png) no-repeat;
 }
 
 .menu-active {
@@ -87,6 +87,27 @@ ul {
   flex-direction: row;
   list-style: none;
   gap: 6vw;
+}
+
+.about .brief button {
+  margin-left: 11.4vw;
+  width: 42vw;
+  height: 7.8vh;
+  margin-top: 6rem;
+  font-size: 4.2vw;
+}
+
+.works .normal button {
+  position: absolute;
+  bottom: 1.5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.6em 4em;
+  white-space: nowrap;
+  margin-bottom: -0.9em;
+  font-size: 6vw;
 }
 
 button:not(#toggle, .menu-close) {
@@ -398,27 +419,6 @@ footer ul {
 
 .about .list img {
   width: unset;
-}
-
-.about .brief button {
-  margin-left: 11.4vw;
-  width: 42vw;
-  height: 7.8vh;
-  margin-top: 6rem;
-  font-size: 4.2vw;
-}
-
-.works .normal button {
-  position: absolute;
-  bottom: 1.5%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 0.6em 4em;
-  white-space: nowrap;
-  margin-bottom: -0.9em;
-  font-size: 6vw;
 }
 
 /* about */

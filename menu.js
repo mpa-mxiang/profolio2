@@ -8,17 +8,16 @@ function toggleMenu() {
   if (menu.className === 'menu-inactive') {
     menu.className = ('menu-active');
     toggle.className = ('toggle-active');
-    closeBtn.style.display = "block";
+    closeBtn.style.display = 'block';
   } else {
     menu.className = ('menu-inactive');
     toggle.className = ('');
-    closeBtn.style.display = "none";
+    closeBtn.style.display = 'none';
   }
 }
 
 closeBtn.addEventListener('click', () => {
   toggleMenu();
-  console.log('Hi,');
 });
 
 toggle.addEventListener('click', () => {
@@ -32,7 +31,7 @@ wrapper.addEventListener('click', () => {
 });
 
 navItem.forEach((navItem) => {
-  return navItem.addEventListener('click', () => {
+  navItem.addEventListener('click', () => {
     toggleMenu();
   });
 });
