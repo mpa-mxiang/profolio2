@@ -594,7 +594,7 @@ textarea {
     background-image: url(./img/Illustration-header.png);
     background-position: right center;
     background-size: auto 75%;
-    height: clamp(42rem, 88vh,189rem);
+    height: clamp(42rem, 88vh, 189rem);
   }
 
   .intro .intro-text {
