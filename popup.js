@@ -93,7 +93,6 @@ const data = [{
 }
 ];
 
-const span = document.getElementsByClassName("close")[0];
 const work = document.getElementById("works");
 data.forEach(function (project) {
   work.innerHTML += `
@@ -139,6 +138,8 @@ for (let i = 0; i < btn.length; i += 1) {
         </div>
     `;
     console.log("innerhtml success!");
+    const span = document.getElementsByClassName("close")[0];
+
     modal.style.display = "flex";
     span.onclick = function () {
       modal.style.display = "none";
