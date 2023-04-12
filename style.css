@@ -774,6 +774,11 @@ textarea {
     cursor: pointer;
   }
 
+  .popup-div {
+    display: flex;
+    flex-direction: row;
+  }
+
   .about .brief h1 {
     font-size: 9vw;
     padding-top: 24vh;
