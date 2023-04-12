@@ -90,10 +90,9 @@ ul {
 }
 
 .about .brief #about-btn {
-  margin-left: 11.4vw;
+  margin-left: 7.5vw;
   width: 42vw;
-  height: 7.8vh;
-  margin-top: 6rem;
+  margin-top: 9rem;
   font-size: 4.2vw;
 }
 
@@ -134,16 +133,8 @@ button {
   z-index: 999;
 }
 
-.popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  width: 80%;
-  max-width: 600px;
-  padding: 20px;
-  z-index: 1000;
+#popup-container {
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 button:hover {
@@ -262,6 +253,10 @@ label {
   display: flex;
   flex-direction: column;
   padding: 5rem 1rem;
+}
+
+.intro ul {
+  margin-left: -9vw;
 }
 
 .works h1 {
@@ -404,6 +399,58 @@ footer ul {
   color: #091e42;
 }
 
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#popup-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px solid #DFE1E6;
+}
+
+#popup-container h1 {
+  width: 259px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+#popup-container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  width: 14rem;
+}
+
+#popup-container ul li {
+  font-size: 0.75em;
+  white-space: nowrap;
+}
+
+#popup-container .btn-div {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+}
+
 .works .normal p {
   position: absolute;
   top: 36%;
@@ -426,6 +473,19 @@ footer ul {
   bottom: 12%;
   left: 1em;
   padding: 0;
+}
+
+.works .normal .hover-btn {
+  position: absolute;
+  bottom: 1.5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.6em 4em;
+  white-space: nowrap;
+  margin-bottom: -0.9em;
+  font-size: 6vw;
 }
 
 #top-work ul {
@@ -700,6 +760,20 @@ textarea {
     justify-content: space-between;
   }
 
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   .about .brief h1 {
     font-size: 9vw;
     padding-top: 24vh;
@@ -818,6 +892,8 @@ textarea {
 
   .about .list-div {
     display: flex;
+    justify-content: stretch;
+    align-items: flex-start;
   }
 
   .about .list {
