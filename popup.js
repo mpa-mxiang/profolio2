@@ -93,7 +93,7 @@ const data = [{
 }
 ];
 const modal = document.getElementById("popup-container");
-const btn = document.querySelectorAll("popup-trigger");
+const btn = document.querySelectorAll(".popup-trigger");
 const span = document.getElementsByClassName("close")[0];
 const work = document.getElementById("works");
 data.forEach(function (project) {
@@ -115,12 +115,17 @@ data.forEach(function (project) {
 });
 
 
-for (let i = 0; i < openWorks.length; i += 1) {
-  btn[i].onclick = function () {
+for (let i = 0; i < btn.length; i += 1) {
+  btn[i].addEventListener('click', () => {
+    console.log("Click success!");
     const body = document.querySelector('body');
-    body.classList.add('overflowH');
+    console.log("body success!");
 
-    workspopup.innerHTML += `
+    body.classList.add('overflowH');
+    console.log("overflow success!");
+
+
+    modal.innerHTML += `
         <div>
         <span class="close" >& times;</span >
         <h1>${project[i].title}</h1>
@@ -135,10 +140,13 @@ for (let i = 0; i < openWorks.length; i += 1) {
                 </div>
         </div>
     `;
+    console.log("innerhtml success!");
+
     span.onclick = function () {
       modal.style.display = "none";
       body.classList.remove('overflowH');
       workspopup.innerHTML = '';
     }
-  }
+    console.log("span success!");
+  });
 }
