@@ -92,8 +92,7 @@ const data = [{
   image: './img/work.png'
 }
 ];
-const modal = document.getElementById("popup-container");
-const btn = document.querySelectorAll(".popup-trigger");
+
 const span = document.getElementsByClassName("close")[0];
 const work = document.getElementById("works");
 data.forEach(function (project) {
@@ -110,38 +109,36 @@ data.forEach(function (project) {
         ${project.technologies}
         </ul>
     </div>
-    <button type="button" class="hover-btn" aria-label="press to see the project" id="${project.id}">See project</button>
+    <button type="button" class="hover-btn popup-trigger" aria-label="press to see the project" id="${project.id}">See project</button>
       `;
 });
-
+const btn = document.querySelectorAll(".popup-trigger");
+const modal = document.getElementById("popup-container");
 
 for (let i = 0; i < btn.length; i += 1) {
   btn[i].addEventListener('click', () => {
-    console.log("Click success!");
-    const body = document.querySelector('body');
-    console.log("body success!");
+    // const body = document.querySelector('body');
 
-    body.classList.add('overflowH');
-    console.log("overflow success!");
+    // body.classList.add('overflowH');
 
 
     modal.innerHTML += `
         <div>
         <span class="close" >& times;</span >
-        <h1>${project[i].title}</h1>
-        <ul>${project[i].technologies}</ul>
+        <h1>${data[i].title}</h1>
+        <ul>${data[i].technologies}</ul>
         <div class="popup-div">
-              <img>${project[i].image}</img>
-              <p>${project[i].description}</p>
+              <img>${data[i].image}</img>
+              <p>${data[i].description}</p>
             </div>
             <div class="btn-div">
-                <button type="button" aria-label="project live demo" tabindex="-13"><a href="${project[i].liveDemoLink}">See live<img src="./img/live-demo.png" alt="live demo icon" /></a></button>
-                <button type="button" aria-label="project source code" tabindex="-14"><a href="${project[i].sourceCodeLink}">See source<img src="./img/github-button.png" alt="github icon" /></a>/button>
+                <button type="button" aria-label="project live demo" tabindex="-13"><a href="${data[i].liveDemoLink}">See live<img src="./img/live-demo.png" alt="live demo icon" /></a></button>
+                <button type="button" aria-label="project source code" tabindex="-14"><a href="${data[i].sourceCodeLink}">See source<img src="./img/github-button.png" alt="github icon" /></a>/button>
                 </div>
         </div>
     `;
     console.log("innerhtml success!");
-
+    modal.style.display = "flex";
     span.onclick = function () {
       modal.style.display = "none";
       body.classList.remove('overflowH');
