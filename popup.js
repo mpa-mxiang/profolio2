@@ -110,7 +110,7 @@ data.forEach(function (project) {
         ${project.technologies}
         </ul>
     </div>
-    <button type="button" class="hover-btn" aria-label="press to see the project" id="${project.id}">See project</button>
+    <button type="button" class="hover-btn" aria-label="press to see the project" id="${popup-trigger}">See project</button>
       `;
 });
 
