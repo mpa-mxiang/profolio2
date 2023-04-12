@@ -120,7 +120,7 @@ for (let i = 0; i < openWorks.length; i += 1) {
     const body = document.querySelector('body');
     body.classList.add('overflowH');
 
-            workspopup.innerHTML += `
+    workspopup.innerHTML += `
         <div>
         <span class="close" >& times;</span >
         <h1>${project[i].title}</h1>
@@ -136,9 +136,9 @@ for (let i = 0; i < openWorks.length; i += 1) {
         </div>
     `;
     span.onclick = function () {
-    modal.style.display = "none";
-    body.classList.remove('overflowH');
-    workspopup.innerHTML = '';
-  }
+      modal.style.display = "none";
+      body.classList.remove('overflowH');
+      workspopup.innerHTML = '';
+    }
   }
 }
