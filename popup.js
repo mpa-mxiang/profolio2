@@ -93,7 +93,7 @@ const data = [{
 }
 ];
 
-const work = document.getElementById("works");
+const work = document.getElementById("projects");
 data.forEach(function (project) {
   work.innerHTML += `
     <img src="${project.image}" alt="Art Selection Project Image" />
