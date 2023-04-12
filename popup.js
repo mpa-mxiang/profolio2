@@ -96,6 +96,7 @@ const data = [{
 const work = document.getElementById("projects");
 data.forEach(function (project) {
   work.innerHTML += `
+  <div class="normal">
     <img src="${project.image}" alt="Art Selection Project Image" />
     <div class="div-text">
         <h1 aria-label="Profesional Art Printing Data" class="hover">${project.title}</h1>
@@ -109,7 +110,7 @@ data.forEach(function (project) {
         </ul>
     </div>
     <button type="button" class="hover-btn popup-trigger" aria-label="press to see the project" id="${project.id}">See project</button>
-
+  </div>
       `;
 });
 const btn = document.querySelectorAll(".popup-trigger");
