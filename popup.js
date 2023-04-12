@@ -125,11 +125,11 @@ for (let i = 0; i < btn.length; i += 1) {
 
     modal.innerHTML += `
         <div>
-        <span class="close" >& times;</span >
+        <span class="close" ><img src="./img/close-icon.png" /></span >
         <h1>${data[i].title}</h1>
         <ul>${data[i].technologies}</ul>
         <div class="popup-div">
-              <img>${data[i].image}</img>
+              <img src="${data[i].image}"></img>
               <p>${data[i].description}</p>
             </div>
             <div class="btn-div">
