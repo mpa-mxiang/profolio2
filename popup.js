@@ -137,7 +137,6 @@ for (let i = 0; i < btn.length; i += 1) {
                 </div>
         </div>
     `;
-    console.log("innerhtml success!");
     const span = document.getElementsByClassName("close")[0];
 
     modal.style.display = "flex";
@@ -146,6 +145,6 @@ for (let i = 0; i < btn.length; i += 1) {
       body.classList.remove('overflowH');
       workspopup.innerHTML = '';
     }
-    console.log("span success!");
-  });
+  
+  }, {once : true});
 }
