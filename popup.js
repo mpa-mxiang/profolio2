@@ -1,4 +1,3 @@
-
 const data = [{
   title: 'Multi Post Stories',
   technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
@@ -7,19 +6,9 @@ const data = [{
   industry's standard.`,
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
-  image: './img/top-work.png'
+  image: './img/top-work.png',
 },
-{
-  title: 'Multi Post Stories',
-  technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
-  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
 
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
-  liveDemoLink: 'https://example.com',
-  sourceCodeLink: 'https://github.com/example',
-  image: './img/work.png',
-  modalImg: './img/modal-mobile.png'
-},
 {
   title: 'Multi Post Stories',
   technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
@@ -29,8 +18,8 @@ const data = [{
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
   image: './img/work.png',
-  modalImg: './img/modal-mobile.png'
 },
+
 {
   title: 'Multi Post Stories',
   technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
@@ -40,8 +29,8 @@ const data = [{
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
   image: './img/work.png',
-  modalImg: './img/modal-mobile.png'
 },
+
 {
   title: 'Multi Post Stories',
   technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
@@ -51,8 +40,8 @@ const data = [{
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
   image: './img/work.png',
-  modalImg: './img/modal-mobile.png'
 },
+
 {
   title: 'Multi Post Stories',
   technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
@@ -62,8 +51,8 @@ const data = [{
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
   image: './img/work.png',
-  modalImg: './img/modal-mobile.png'
 },
+
 {
   title: 'Multi Post Stories',
   technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
@@ -73,10 +62,20 @@ const data = [{
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
   image: './img/work.png',
-  modalImg: './img/modal-mobile.png'
-}
+},
+
+{
+  title: 'Multi Post Stories',
+  technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
+  description: `A daily selection of privately personalized reads;
+  no accounts or sign-ups required. has been the
+  industry's standard.`,
+  liveDemoLink: 'https://example.com',
+  sourceCodeLink: 'https://github.com/example',
+  image: './img/work.png',
+},
 ];
-const work = document.getElementById("projects");
+const work = document.getElementById('projects');
 work.innerHTML += `
 <div id="top-work">
 <div class="img-container">
@@ -92,13 +91,12 @@ work.innerHTML += `
       <ul>
       ${data[0].technologies}
       </ul>
+      <button type="button" class="popup-trigger" aria-label="press to see the project" id="${data[0].id}">See project</button>
   </div>
-  <button type="button" class="popup-trigger" aria-label="press to see the project" id="${data[0].id}">See project</button>
 </div>
     `;
 const normalDiv = document.getElementById('div-container');
 for (let j = 1; j < data.length; j += 1) {
-
   normalDiv.innerHTML += `
   <div class="normal">
     <img src="${data[j].image}" alt="Art Selection Project Image" />
@@ -118,21 +116,21 @@ for (let j = 1; j < data.length; j += 1) {
   </div>
       `;
 }
-const btn = document.querySelectorAll(".popup-trigger");
-const modal = document.getElementById("popup-container");
-
-
+const btn = document.querySelectorAll('.popup-trigger');
+const modal = document.getElementById('popup-container');
 for (let i = 0; i < btn.length; i += 1) {
   btn[i].addEventListener('click', () => {
     modal.innerHTML = `
     <div class="modal-top">
+
         <span class="close" ><img src="./img/close-icon.png" /></span >
-        <h1 class="modal-heading">${data[i].title}</h1>
+        <h1>${data[i].title}</h1>
         </div>
         <ul>${data[i].technologies}</ul>
         <div class="popup-div">
-              <img src="${data[i].modalImg}"></img>
+              <img src="${data[i].image}"></img>
               <div class="modal-bottom">
+
             <p>${data[i].description}</p>
             <div class="btn-div">
                 <button type="button" aria-label="project live demo" tabindex="-13"><a href="${data[i].liveDemoLink}">See live<img src="./img/live-demo.png" alt="live demo icon" /></a></button>
@@ -141,14 +139,11 @@ for (let i = 0; i < btn.length; i += 1) {
                 </div>
                 </div>
     `;
-    const span = document.getElementsByClassName("close")[0];
-
-    modal.style.display = "flex";
-    span.onclick = function () {
-      modal.style.display = "none";
+    const span = document.getElementsByClassName('close')[0];
+    modal.style.display = 'flex';
+    span.onclick = () => {
+      modal.style.display = 'none';
       modal.innerHTML = '';
-    }
-
+    };
   });
 }
-
