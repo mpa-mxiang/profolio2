@@ -7,7 +7,7 @@ const data = [{
   industry's standard.`,
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
-  image: './img/work.png'
+  image: './img/top-work.png'
 },
 {
   title: 'Multi Post Stories',
@@ -19,7 +19,6 @@ const data = [{
   sourceCodeLink: 'https://github.com/example',
   image: './img/work.png'
 },
-  ,
 {
   title: 'Multi Post Stories',
   technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
@@ -71,36 +70,54 @@ const data = [{
   image: './img/work.png'
 }
 ];
-
 const work = document.getElementById("projects");
+work.innerHTML += `
+<div id="top-work">
+<div class="img-container">
+  <img src="${data[0].image}" alt="Art Selection Project Image" />
+  </div>
+  <div class="text-container">
+      <h1 aria-label="Profesional Art Printing Data"">${data[0].title}</h1>
+      <p aria-label="A daily selection of privately personalized reads;
+      no accounts or sign-ups required. has been the
+      industry's standard" class="hover">
+      ${data[0].description}
+      </p>
+      <ul>
+      ${data[0].technologies}
+      </ul>
+  </div>
+  <button type="button" class="popup-trigger" aria-label="press to see the project" id="${data[0].id}">See project</button>
+</div>
+    `;
+const normalDiv = document.getElementById('div-container');
+for (let j = 1; j < data.length; j += 1) {
 
-data.forEach(function (project) {
-  work.innerHTML += `
+  normalDiv.innerHTML += `
   <div class="normal">
-    <img src="${project.image}" alt="Art Selection Project Image" />
+    <img src="${data[j].image}" alt="Art Selection Project Image" />
     <div class="div-text">
-        <h1 aria-label="Profesional Art Printing Data" class="hover">${project.title}</h1>
+        <h1 aria-label="Profesional Art Printing Data" class="hover">${data[j].title}</h1>
         <p aria-label="A daily selection of privately personalized reads;
         no accounts or sign-ups required. has been the
         industry's standard" class="hover">
-        ${project.description}
+        ${data[j].description}
         </p>
         <ul>
-        ${project.technologies}
+        ${data[j].technologies}
         </ul>
-    </div>
-    <button type="button" class="hover-btn popup-trigger" aria-label="press to see the project" id="${project.id}">See project</button>
+    
+    <button type="button" class="hover-btn popup-trigger" aria-label="press to see the project" id="${data[j].id}">See project</button>
+  </div>
   </div>
       `;
-});
+}
 const btn = document.querySelectorAll(".popup-trigger");
 const modal = document.getElementById("popup-container");
 
 
 for (let i = 0; i < btn.length; i += 1) {
   btn[i].addEventListener('click', () => {
-
-
     modal.innerHTML = `
         <span class="close" ><img src="./img/close-icon.png" /></span >
         <h1>${data[i].title}</h1>
@@ -111,7 +128,7 @@ for (let i = 0; i < btn.length; i += 1) {
             </div>
             <div class="btn-div">
                 <button type="button" aria-label="project live demo" tabindex="-13"><a href="${data[i].liveDemoLink}">See live<img src="./img/live-demo.png" alt="live demo icon" /></a></button>
-                <button type="button" aria-label="project source code" tabindex="-14"><a href="${data[i].sourceCodeLink}">See source<img src="./img/github-button.png" alt="github icon" /></a>/button>
+                <button type="button" aria-label="project source code" tabindex="-14"><a href="${data[i].sourceCodeLink}">See source<img src="./img/github-button.png" alt="github icon" /></a></button>
                 </div>
     `;
     const span = document.getElementsByClassName("close")[0];
