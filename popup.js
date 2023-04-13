@@ -12,12 +12,13 @@ const data = [{
 {
   title: 'Multi Post Stories',
   technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
-  description: `A daily selection of privately personalized reads;
-  no accounts or sign-ups required. has been the
-  industry's standard.`,
+  description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
+
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
-  image: './img/work.png'
+  image: './img/work.png',
+  modalImg: './img/modal-mobile.png'
 },
 {
   title: 'Multi Post Stories',
@@ -27,7 +28,8 @@ const data = [{
   industry's standard.`,
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
-  image: './img/work.png'
+  image: './img/work.png',
+  modalImg: './img/modal-mobile.png'
 },
 {
   title: 'Multi Post Stories',
@@ -37,7 +39,8 @@ const data = [{
   industry's standard.`,
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
-  image: './img/work.png'
+  image: './img/work.png',
+  modalImg: './img/modal-mobile.png'
 },
 {
   title: 'Multi Post Stories',
@@ -47,7 +50,8 @@ const data = [{
   industry's standard.`,
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
-  image: './img/work.png'
+  image: './img/work.png',
+  modalImg: './img/modal-mobile.png'
 },
 {
   title: 'Multi Post Stories',
@@ -57,7 +61,8 @@ const data = [{
   industry's standard.`,
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
-  image: './img/work.png'
+  image: './img/work.png',
+  modalImg: './img/modal-mobile.png'
 },
 {
   title: 'Multi Post Stories',
@@ -67,7 +72,8 @@ const data = [{
   industry's standard.`,
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
-  image: './img/work.png'
+  image: './img/work.png',
+  modalImg: './img/modal-mobile.png'
 }
 ];
 const work = document.getElementById("projects");
@@ -106,7 +112,7 @@ for (let j = 1; j < data.length; j += 1) {
         <ul>
         ${data[j].technologies}
         </ul>
-    
+
     <button type="button" class="hover-btn popup-trigger" aria-label="press to see the project" id="${data[j].id}">See project</button>
   </div>
   </div>
@@ -119,16 +125,20 @@ const modal = document.getElementById("popup-container");
 for (let i = 0; i < btn.length; i += 1) {
   btn[i].addEventListener('click', () => {
     modal.innerHTML = `
+    <div class="modal-top">
         <span class="close" ><img src="./img/close-icon.png" /></span >
-        <h1>${data[i].title}</h1>
+        <h1 class="modal-heading">${data[i].title}</h1>
+        </div>
         <ul>${data[i].technologies}</ul>
         <div class="popup-div">
-              <img src="${data[i].image}"></img>
-              <p>${data[i].description}</p>
-            </div>
+              <img src="${data[i].modalImg}"></img>
+              <div class="modal-bottom">
+            <p>${data[i].description}</p>
             <div class="btn-div">
                 <button type="button" aria-label="project live demo" tabindex="-13"><a href="${data[i].liveDemoLink}">See live<img src="./img/live-demo.png" alt="live demo icon" /></a></button>
                 <button type="button" aria-label="project source code" tabindex="-14"><a href="${data[i].sourceCodeLink}">See source<img src="./img/github-button.png" alt="github icon" /></a></button>
+                </div>
+                </div>
                 </div>
     `;
     const span = document.getElementsByClassName("close")[0];
@@ -138,7 +148,7 @@ for (let i = 0; i < btn.length; i += 1) {
       modal.style.display = "none";
       modal.innerHTML = '';
     }
-  
+
   });
 }
 

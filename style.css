@@ -377,6 +377,30 @@ footer ul {
   display: none;
 }
 
+#pop-container {
+  height: 90vh;
+  width: 90vw;
+}
+
+  .popup-div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .modal-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
 .works {
   background: #e5e5e5;
   width: 100%;
@@ -399,7 +423,6 @@ footer ul {
   float: right;
   font-size: 28px;
   font-weight: bold;
-  align-self: flex-end;
 }
 
 .close:hover,
@@ -419,16 +442,16 @@ footer ul {
   margin: auto;
   width: 90%;
   backdrop-filter: blur(20px);
-  justify-content: center;
   align-items: center;
   position: fixed;
   backdrop-filter: blur(20px);
-  top: 87px;
+  top: 5%;
+  height: auto;
+  z-index: 999;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 #popup-container h1 {
-  width: 259px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -439,15 +462,23 @@ footer ul {
   display: flex;
   flex-direction: row;
   padding: 10px 12px;
-  width: 14rem;
+  color:#3C3A39;
 }
 
 #popup-container ul li {
   font-size: 0.75em;
   white-space: nowrap;
+  border: 1px solid #3C3A39;
+  padding: 0.5rem 0.7rem;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 16px;
 }
 
 #popup-container .btn-div {
+  margin-left: 5%;
   display: flex;
   gap: 1.5rem;
   flex-direction: row;
@@ -501,7 +532,6 @@ footer ul {
 
 .works .normal {
   position: relative;
-  margin: 2.4vh 1.2vw;
   margin-bottom: 24px;
 }
 
@@ -572,7 +602,13 @@ textarea {
   width: 80%;
 }
 
+.modal-heading {
+  color: #172B4D;
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
+
   body {
     width: 100%;
   }
@@ -783,11 +819,6 @@ textarea {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
-
-  .popup-div {
-    display: flex;
-    flex-direction: row;
   }
 
   .about .brief h1 {
