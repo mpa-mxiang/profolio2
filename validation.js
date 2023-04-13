@@ -34,7 +34,25 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 
 	const email = input.value.trim();
 	if (!emailRegex.test(email)) {
-		return showError(input, invalidMsg);
+		return showError(input, "ERROR: Please follow the proper email format, make sure your email is all lowercase!");
 	}
 	return true;
 }
+
+const form = document.querySelector("#contact-form");
+const NAME_REQUIRED = "Please enter your name";
+const EMAIL_REQUIRED = "Please enter your email";
+const EMAIL_INVALID = "Please enter a correct email address format";
+
+form.addEventListener("submit", function (event) {
+	// stop form submission
+	Event.preventDefault();
+
+	// validate the form
+	let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
+	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
+	// if valid, submit the form.
+	if (nameValid && emailValid) {
+		form.submit();
+	}
+});
