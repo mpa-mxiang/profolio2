@@ -7,7 +7,6 @@ const data = [{
                     ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make a type specimen book. It has survived not only
                     five centuries, but also the leap into electronic typesetting, remaining essent`,
-  technologies: ['HTML', 'Bootstrap', 'Ruby'],
   liveDemoLink: 'https://example.com',
   sourceCodeLink: 'https://github.com/example',
   image: './img/work.png'
@@ -118,9 +117,9 @@ const modal = document.getElementById("popup-container");
 
 for (let i = 0; i < btn.length; i += 1) {
   btn[i].addEventListener('click', () => {
-    // const body = document.querySelector('body');
+    const body = document.querySelector('body');
 
-    // body.classList.add('overflowH');
+    body.classList.add('overflowH');
 
 
     modal.innerHTML += `
@@ -140,7 +139,7 @@ for (let i = 0; i < btn.length; i += 1) {
     `;
     const span = document.getElementsByClassName("close")[0];
 
-    modal.style.display = "flex";
+    modal.style.display = "block";
     span.onclick = function () {
       modal.style.display = "none";
       body.classList.remove('overflowH');

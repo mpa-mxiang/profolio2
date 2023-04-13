@@ -423,6 +423,8 @@ footer ul {
   background-color: #fefefe;
   margin: auto;
   width: 95%;
+  backdrop-filter: blur(20px 20px);
+  z-index: 9999;
 }
 
 #popup-container h1 {
