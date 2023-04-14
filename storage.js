@@ -29,21 +29,16 @@ form.addEventListener('input', (event) => {
 });
 
 const savedData = JSON.parse(localStorage.getItem('formData'));
-
-
-console.log(savedData)
+console.log(savedData);
 // error is here
 if (savedData) {
   nameInput.value = savedData.name;
   emailInput.value = savedData.email;
   commentsInput.value = savedData.comments;
-  console.log(savedData.comments)
+  console.log(savedData.comments);
 }
-
-console.log(commentsInput.value)
+console.log(commentsInput.value);
 // error is here
-
-
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', () => {
   localStorage.clear();
-})
+});
