@@ -2,7 +2,7 @@ const emailInput = document.getElementById('email');
 const form = document.getElementById('contact-form');
 const validateMessage = document.getElementById('validate');
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   const email = emailInput.value.trim();
   const isLowercase = email === email.toLowerCase();
