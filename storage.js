@@ -1,43 +1,27 @@
-const form = document.querySelector('#contact-form');
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
-const commentsInput = document.getElementById('comments');
-
+const typedName = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const messageInput = document.querySelector('#comments');
+const form = document.getElementById('contact-form');
 const formData = JSON.parse(localStorage.getItem('formData')) || {};
-
+const savedData = JSON.parse(localStorage.getItem('formData'));
 if (formData.name) {
-  nameInput.value = formData.name;
+  typedName.value = formData.name;
 }
-
 if (formData.email) {
   emailInput.value = formData.email;
 }
-
 if (formData.comments) {
-  commentsInput.value = formData.comments;
+  messageInput.value = formData.message;
 }
-
 form.addEventListener('input', (event) => {
-  console.log('Input event triggered!');
   formData[event.target.name] = event.target.value;
-
-  try {
-    localStorage.setItem('formData', JSON.stringify(formData));
-  } catch (e) {
-    console.error('Error saving data to localStorage:', e);
-  }
+  localStorage.setItem('formData', JSON.stringify(formData));
 });
-
-const savedData = JSON.parse(localStorage.getItem('formData'));
-console.log(savedData);
-// error is here
 if (savedData) {
-  nameInput.value = savedData.name;
   emailInput.value = savedData.email;
-  commentsInput.value = savedData.comments;
-  console.log(savedData.comments);
+  messageInput.value = savedData.message;
+  typedName.value = savedData.name;
 }
-console.log(commentsInput.value);
 // error is here
 form.addEventListener('submit', () => {
   localStorage.clear();
