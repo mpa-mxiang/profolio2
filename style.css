@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Crete Round&display=swap");
-@import url("https://fonts.googleapis.com/css?family=InaiMathi&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
 
 *,
@@ -102,10 +101,9 @@ ul {
 }
 
 .about .brief #about-btn {
-  margin-left: 11.4vw;
+  margin-left: 7.5vw;
   width: 42vw;
-  height: 7.8vh;
-  margin-top: 6rem;
+  margin-top: 9rem;
   font-size: 4.2vw;
 }
 
@@ -225,6 +223,17 @@ label {
   padding: 0.75em 0.75em;
 }
 
+#popup-container ul li {
+  font-size: 0.75em;
+  white-space: nowrap;
+  border: 1px solid #3c3a39;
+  padding: 0.5rem 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
 #menu li:last-child {
   display: none;
 }
@@ -252,6 +261,16 @@ label {
   display: flex;
   flex-direction: column;
   padding: 5rem 1rem;
+}
+
+footer ul {
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+.intro ul {
+  margin-left: -9vw;
 }
 
 .works h1 {
@@ -318,12 +337,6 @@ footer {
   border-top: 1px solid #dfe1e6;
 }
 
-footer ul {
-  justify-content: center;
-  align-items: center;
-  padding-inline-start: 0;
-}
-
 .works .normal h1 {
   position: absolute;
   top: 10.2%;
@@ -373,6 +386,7 @@ footer ul {
 }
 
 /* works */
+
 .works {
   background: #e5e5e5;
   width: 100%;
@@ -390,6 +404,95 @@ footer ul {
   color: #091e42;
 }
 
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.modal-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#popup-container {
+  box-sizing: border-box;
+  flex-direction: column;
+  align-self: center;
+  padding: 16px;
+  border: 1px solid #dfe1e6;
+  background: #fff;
+  margin: auto;
+  width: 90%;
+  backdrop-filter: blur(20px);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  display: none;
+  top: 87px;
+}
+
+#popup-container h1 {
+  width: 259px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  margin: 0;
+}
+
+.works .normal ul {
+  position: absolute;
+  bottom: 12%;
+  left: 1em;
+  padding: 0;
+}
+
+#popup-container ul {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 12px;
+  width: 14rem;
+  justify-content: center;
+  margin: 0;
+}
+
+.about .list img {
+  width: unset;
+}
+
+#popup-container img {
+  inline-size: 80%;
+}
+
+#popup-container .btn-div {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+}
+
+#popup-container button img {
+  width: auto;
+}
+
 .works .normal p {
   position: absolute;
   top: 36%;
@@ -399,6 +502,7 @@ footer ul {
   font-family: "Inter", sans-serif;
   line-height: 1.8em;
   width: 90%;
+  margin: 0;
 }
 
 #top-work p {
@@ -407,11 +511,17 @@ footer ul {
   color: #091e42;
 }
 
-.works .normal ul {
+.works .normal .hover-btn {
   position: absolute;
-  bottom: 12%;
-  left: 1em;
-  padding: 0;
+  bottom: 1.5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.6em 4em;
+  white-space: nowrap;
+  margin-bottom: -0.9em;
+  font-size: 6vw;
 }
 
 #top-work ul {
@@ -423,10 +533,6 @@ footer ul {
   position: relative;
   margin: 2.4vh 1.2vw;
   margin-bottom: 24px;
-}
-
-.about .list img {
-  width: unset;
 }
 
 /* about */
@@ -686,6 +792,15 @@ textarea {
     justify-content: space-between;
   }
 
+  #popup-container {
+    width: auto;
+    top: 120px;
+  }
+
+  .popup-div {
+    display: flex;
+  }
+
   .about .brief h1 {
     font-size: 9vw;
     padding-top: 24vh;
@@ -708,6 +823,59 @@ textarea {
     left: 2.1vw;
   }
 
+  #popup-container h1 {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    flex-direction: row-reverse;
+    margin-left: 4rem;
+  }
+
+  .about .list ul {
+    align-items: normal;
+  }
+
+  .about .list:last-child ul {
+    padding-left: 0;
+  }
+
+  .works .normal .div-text ul {
+    margin-bottom: 13.2vw;
+    gap: 1.5vw;
+    top: -7vw;
+    left: 2.1vw;
+    align-self: baseline;
+  }
+
+  #popup-container ul {
+    margin-left: 5.5rem;
+    gap: 32px;
+  }
+
+  #popup-container p {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  #popup-contaienr img {
+    width: 48vw;
+  }
+
+  #popup-container .btn-div {
+    margin-left: 1rem;
+  }
+
+  #popup-div {
+    display: flex;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   #top-work h1 {
     font-size: 3vw;
     text-align: left;
@@ -725,7 +893,7 @@ textarea {
     margin-top: 9vw;
   }
 
-  .div-container .normal .hover-btn {
+  #div-container .normal .hover-btn {
     margin: 0 0 -20px 0;
     position: absolute;
     left: 0%;
@@ -738,12 +906,12 @@ textarea {
     background-color: transparent;
   }
 
-  .div-container .normal:hover .hover-btn {
+  #div-container .normal:hover .hover-btn {
     background-color: #ff6b00;
     color: #fff;
   }
 
-  .div-container .normal .hover-btn:hover {
+  #div-container .normal .hover-btn:hover {
     background-color: #fff5e1;
     border: solid 1px #f55800;
     color: #f55800;
@@ -768,7 +936,7 @@ textarea {
     margin-top: -2.7vw;
   }
 
-  .div-container {
+  #div-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -778,14 +946,6 @@ textarea {
 
   #normal {
     width: 27vw;
-  }
-
-  .about .list ul {
-    align-items: normal;
-  }
-
-  .about .list:last-child ul {
-    padding-left: 0;
   }
 
   .about .brief {
@@ -804,6 +964,8 @@ textarea {
 
   .about .list-div {
     display: flex;
+    justify-content: stretch;
+    align-items: flex-start;
   }
 
   .about .list {
@@ -846,14 +1008,13 @@ textarea {
     width: 100%;
   }
 
-  .works .normal .div-text ul {
-    margin-bottom: 13.2vw;
-    gap: 1.5vw;
-    top: -7vw;
-    left: 2.1vw;
-  }
-
   .about .list:nth-child(1) {
     padding-bottom: 8vw;
+  }
+
+  .modal-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
