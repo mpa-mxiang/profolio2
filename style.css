@@ -1017,4 +1017,8 @@ textarea {
     flex-direction: column;
     gap: 10px;
   }
+
+  #validate {
+    font-size: 4rem;
+  }
 }
