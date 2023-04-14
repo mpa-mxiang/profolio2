@@ -82,7 +82,7 @@
 
         </div>
         <div id="div-container"></div>
-        <div id="popup-container"></div>            
+        <div id="popup-container"></div>
     </section>
 
     <section class="about" id="about">
@@ -185,7 +185,7 @@
                     <input aria-label="email" id="email" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" placeholder="Email address" name="email" required aria-label="email" tabindex="17"/>
                     <label for="comments" aria-label="comments"
                     >comments*</label>
-                    <textarea aria-label="comments" placeholder="Enter text here" maxlength="500" name="message" required tabindex="18"></textarea>
+                    <textarea aria-label="comments" id="comments" placeholder="Enter text here" maxlength="500" name="message" required tabindex="18"></textarea>
                     <button aria-label="submit" type="submit" value="Submit" tabindex="19">Get in touch</button>
                     <p id="validate"></p>
                 </form>
@@ -214,10 +214,11 @@
     </footer>
 
 </div>
-
+    <script src="storage.js"></script>
     <script src="menu.js"></script>
-    <script src="validation.js"></script>
+    <!-- <script src="validation.js"></script> -->
     <script src="popup.js"></script>
+    <script src="storage.js"></script>
 </body>
 
 </html>
