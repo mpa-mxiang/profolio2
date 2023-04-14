@@ -1,21 +1,39 @@
-// get the form element
-const form = document.getElementById('contact-form');
-
-// get the form inputs
+// Get the form elements
+const form = document.querySelector('form');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
-const messageInput = document.getElementById('comments');
+const commentsInput = document.getElementById('comments');
 
+// Load the form data from local storage
+const formData = JSON.parse(localStorage.getItem('formData')) || {};
 
-// set local storage items
-localStorage.setItem('name', nameInput.value);
-localStorage.setItem('email', emailInput.value.toLowerCase());
-localStorage.setItem('message', messageInput.value);
+// Set the form values if they exist in local storage
+if (formData.name) {
+  nameInput.value = formData.name;
+}
 
+if (formData.email) {
+  emailInput.value = formData.email;
+}
 
-// set form inputs to stored values on page load
-window.onload = function() {
-  nameInput.value = localStorage.getItem('name') || '';
-  emailInput.value = localStorage.getItem('email') || '';
-  messageInput.value = localStorage.getItem('message') || '';
+if (formData.comments) {
+  commentsInput.value = formData.comments;
+}
+
+// Save the form data to local storage whenever the user changes an input field
+form.addEventListener('input', () => {
+  console.log("form input");
+  formData.name = nameInput.value;
+  formData.email = emailInput.value;
+  formData.comments = commentsInput.value;
+  
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+const savedData = JSON.parse(localStorage.getItem('formData'));
+if (savedData) {
+  console.log("saved input");
+  document.getElementById('name').value = savedData.name;
+  document.getElementById('email').value = savedData.email;
+  document.getElementById('comments').value = savedData.comments;
 }
