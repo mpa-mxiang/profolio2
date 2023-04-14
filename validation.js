@@ -2,14 +2,19 @@ const emailInput = document.getElementById('email');
 const form = document.getElementById('contact-form');
 const validateMessage = document.getElementById('validate');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+function validate () {
   const email = emailInput.value.trim();
-  const isLowercase = email === email.toLowerCase();
-  if (!isLowercase) {
+  const isLowercase = email.toLowerCase();
+  if (email !== isLowercase) {
     validateMessage.innerText = 'Please enter a lowercase email address';
     validateMessage.style.color = 'red';
-    return;
+    return false;
   }
-  form.submit();
-});
+  return true;
+};
+
+form.addEventListener('submit', (event) => {
+   if (validate() === false) {
+    {event.preventDefault();}
+   }
+})
