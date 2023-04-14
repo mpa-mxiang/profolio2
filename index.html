@@ -9,32 +9,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
-
-
     <title>Jiachun's Profolio Website</title>
 </head>
 
 <body>
-    <header tabindex="0">
-        <h1 aria-label="Jiachun" tabindex="1"><a href="#intro">Jiachun</a></h1>
-        <nav>
-            <img class="header-mobile" src="./img/bar-icon.png" alt="bar-icon" tabindex="2"/>
-            <ul>
-                <li>
-                    <a href="#works" tabindex="3">Profolio</a>
-                </li>
-                <li>
-                    <a href="#about" tabindex="4">About</a>
-                </li>
-                <li>
-                    <a href="#contact" tabindex="5">Contact</a>
-                </li>
-                <li>
-                    <a href="mailto: jcxiang1230@gmail.com" tabindex="6"><img class="header-desktop" src="./img/mail.png" alt="mail-icon" /></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+        <h1 class="nav-heading" aria-label="Jiachun" tabindex="1"><a href="#intro">Jiachun</a></h1>
+    </div>
+    <button type="button" class="menu-close" aria-controls="menu" ><img src="./img/close-icon.png"/>
+    </button>
+        <button type="button" id="toggle" class="toggle" aria-controls="menu" >
+        </button>
+        <ul id="menu" class="menu-inactive">
+            <li>
+                <a class="nav-item" href="#works" tabindex="3">Profolio</a></li>
+            <li>
+                <a class="nav-item" href="#about" tabindex="4">About</a></li>
+            <li>
+                <a class="nav-item" href="#contact" tabindex="5">Contact</a></li>
+            <li >
+                <a href="mailto: jcxiang1230@gmail.com" tabindex="6"><img class="header-desktop" src="./img/mail.png" alt="mail-icon" /></a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    <div id="wrapper">
 
     <section class="intro" id="intro" tabindex="7">
         <div class="intro-text">
@@ -74,199 +75,11 @@
             <h1 aria-label="My Recent works" >My Recent works</h1>
             <hr />
         </div>
-        <div id="top-work">
-            <div class="img-container">
-                <img src="./img/top-work.png" alt="highlight work demo" />
-            </div>
-            <div class="text-container">
-                <h1 aria-label="Multi-Post Stories" >Multi-Post Stories</h1>
-                <p aria-label="A daily selection of privately personalized
-                reads; no accounts or sign-ups required. has been
-                the industry's standard dummy text ever since the
-                1500s, when an unknown printer took a standard
-                dummy text." >A daily selection of privately personalized
-                    reads; no accounts or sign-ups required. has been
-                    the industry's standard dummy text ever since the
-                    1500s, when an unknown printer took a standard
-                    dummy text.
-                </p>
-                <ul aria-label="Tech stack: css, html, bootstrap, Ruby" > 
-                    <li>
-                        css
-                    </li>
-                    <li>
-                        html
-                    </li>
-                    <li>
-                        bootstrap
-                    </li>
-                    <li>
-                        Ruby
-                    </li>
-                </ul>
+        <div id="projects">
 
-                <button type="button" aria-label="press to see the project" tabindex="13">See project</button>
-            </div>
         </div>
-        <div class="div-container">
-            <div class="normal">
-                <img src="./img/work.png" alt="Art Selection Project Image">
-                <div class="div-text">
-                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
-                    <p aria-label="A daily selection of privately personalized reads;
-                    no accounts or sign-ups required. has been the
-                    industry's standard" class="hover">
-                        A daily selection of privately personalized reads;
-                        no accounts or sign-ups required. has been the
-                        industry's standard.
-                    </p>
-                    <ul>
-                        <li>
-                            html
-                        </li>
-                        <li>
-                            bootstrap
-                        </li>
-                        <li>
-                            Ruby
-                        </li>
-                    </ul>
-                </div>
-                <button type="button" aria-label="press to see the project" >See project</button>
-                
-            </div>
-            <div class="normal">
-                <img src="./img/work.png" alt="Art Selection Project Image">
-                <div class="div-text">
-                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
-                    <p aria-label="A daily selection of privately personalized reads;
-                    no accounts or sign-ups required. has been the
-                    industry's standard" class="hover">
-                        A daily selection of privately personalized reads;
-                        no accounts or sign-ups required. has been the
-                        industry's standard.
-                    </p>
-                    <ul>
-                        <li>
-                            html
-                        </li>
-                        <li>
-                            bootstrap
-                        </li>
-                        <li>
-                            Ruby
-                        </li>
-                    </ul>
-                </div>
-                <button type="button" aria-label="press to see the project" >See project</button>
-                
-            </div>
-            <div class="normal">
-                <img src="./img/work.png" alt="Art Selection Project Image">
-                <div class="div-text">
-                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
-                    <p aria-label="A daily selection of privately personalized reads;
-                    no accounts or sign-ups required. has been the
-                    industry's standard" class="hover">
-                        A daily selection of privately personalized reads;
-                        no accounts or sign-ups required. has been the
-                        industry's standard.
-                    </p>
-                    <ul>
-                        <li>
-                            html
-                        </li>
-                        <li>
-                            bootstrap
-                        </li>
-                        <li>
-                            Ruby
-                        </li>
-                    </ul>
-                </div>
-                <button type="button" aria-label="press to see the project" >See project</button>
-                
-            </div>
-            <div class="normal">
-                <img src="./img/work.png" alt="Art Selection Project Image">
-                <div class="div-text">
-                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
-                    <p aria-label="A daily selection of privately personalized reads;
-                    no accounts or sign-ups required. has been the
-                    industry's standard" class="hover">
-                        A daily selection of privately personalized reads;
-                        no accounts or sign-ups required. has been the
-                        industry's standard.
-                    </p>
-                    <ul>
-                        <li>
-                            html
-                        </li>
-                        <li>
-                            bootstrap
-                        </li>
-                        <li>
-                            Ruby
-                        </li>
-                    </ul>
-                </div>
-                <button type="button" aria-label="press to see the project" >See project</button>
-                
-            </div>
-            <div class="normal">
-                <img src="./img/work.png" alt="Art Selection Project Image">
-                <div class="div-text">
-                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
-                    <p aria-label="A daily selection of privately personalized reads;
-                    no accounts or sign-ups required. has been the
-                    industry's standard" class="hover">
-                        A daily selection of privately personalized reads;
-                        no accounts or sign-ups required. has been the
-                        industry's standard.
-                    </p>
-                    <ul>
-                        <li>
-                            html
-                        </li>
-                        <li>
-                            bootstrap
-                        </li>
-                        <li>
-                            Ruby
-                        </li>
-                    </ul>
-                </div>
-                <button type="button" aria-label="press to see the project" >See project</button>
-                
-            </div>
-            <div class="normal">
-                <img src="./img/work.png" alt="Art Selection Project Image">
-                <div class="div-text">
-                    <h1 aria-label="Profesional Art Printing Data" class="hover">Profesional Art Printing Data</h1>
-                    <p aria-label="A daily selection of privately personalized reads;
-                    no accounts or sign-ups required. has been the
-                    industry's standard" class="hover">
-                        A daily selection of privately personalized reads;
-                        no accounts or sign-ups required. has been the
-                        industry's standard.
-                    </p>
-                    <ul>
-                        <li>
-                            html
-                        </li>
-                        <li>
-                            bootstrap
-                        </li>
-                        <li>
-                            Ruby
-                        </li>
-                    </ul>
-                </div>
-                <button type="button" aria-label="press to see the project" >See project</button>
-                
-            </div>
-        </div>
-        </div>
+        <div id="div-container"></div>
+        <div id="popup-container"></div>            
     </section>
 
     <section class="about" id="about">
@@ -287,7 +100,7 @@
                     have a project you need coded,
                     don’t hestiate to contact me.
                 </p>
-                <button type="button" aria-label="click here to see my resume" tabindex="15">Get My Resume</button>
+                <button id="about-btn" type="button" aria-label="click here to see my resume" tabindex="15">Get My Resume</button>
             </div>
         </div>
         <hr />
@@ -395,7 +208,11 @@
             </li>
         </ul>
     </footer>
+</div>
 
+    <script src="menu.js"></script>
+    <script src="popup.js"></script>
+    
 </body>
 
 </html>
