@@ -1,4 +1,4 @@
-const form = document.querySelectorAll('#contact-form');
+const form = document.querySelector('#contact-form');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const commentsInput = document.getElementById('comments');
@@ -30,8 +30,20 @@ form.addEventListener('input', (event) => {
 
 const savedData = JSON.parse(localStorage.getItem('formData'));
 
+
+console.log(savedData)
+// error is here
 if (savedData) {
   nameInput.value = savedData.name;
   emailInput.value = savedData.email;
   commentsInput.value = savedData.comments;
+  console.log(savedData.comments)
 }
+
+console.log(commentsInput.value)
+// error is here
+
+
+form.addEventListener('submit', (e) => {
+  localStorage.clear();
+})
