@@ -22,7 +22,7 @@ if (savedData) {
   messageInput.value = savedData.message;
   formName.value = savedData.name;
 }
-// error is here
+
 forms.addEventListener('submit', () => {
   localStorage.clear();
 });
