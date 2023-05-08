@@ -1,12 +1,10 @@
 const data = [{
-  title: 'Multi Post Stories',
-  technologies: '<li>HTML</li><li>Bootstrap</li><li>Ruby</li>',
-  description: `A daily selection of privately personalized reads;
-  no accounts or sign-ups required. has been the
-  industry's standard.`,
-  liveDemoLink: 'https://example.com',
-  sourceCodeLink: 'https://github.com/example',
-  image: './img/top-work.png',
+  title: 'Awesome books with ES6',
+  technologies: '<li>HTML</li><li>CSS</li><li>JavaScript</li>',
+  description: `This is a SPA(Simple Page Application) project with using ES6 and module syntaxes.`,
+  liveDemoLink: 'https://mpa-mxiang.github.io/awesome-books/',
+  sourceCodeLink: 'https://github.com/mpa-mxiang/awesome-books-es6',
+  image: './img/p1.gif',
 },
 
 {
