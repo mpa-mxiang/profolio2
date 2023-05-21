@@ -26,14 +26,14 @@
 
 # 📖 **Personal-Profolio** <a name="about-project"></a>
 
-This is a project that build with the checking tool linter, language HTML and CSS to have the header bar and the intro section as the part of the profolio in the mobile section.
+A project that build with the error checking tool linter, HTML/CSS and JavaScript to have a responsive personal profolio page that is visible for both mobile and desktop, mobile menu, popup window and local storage features implementing with JavaScript.
 
 
 ## 🛠 Built With <a name="built-with">VS Code</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-GitHub/Git, VS Code, HTML/CSS, Linter, Figma
+GitHub/Git, VS Code, HTML/CSS, Linter, Figma, JavaScirpt
 
 ### Key Features <a name="key-features"></a>
 
@@ -51,7 +51,7 @@ All of above can be viewed in mobile and desktop responsively.
 
 ### Future Features <a name="future-features"></a>
 
-- JavaScript implementation
+- Add real projects
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +81,7 @@ So make sure you have VS code installed beforehead, you call install VS code thr
 Clone this repository to your desired folder in your laptop:
 
   cd "your-folder-name"
-  git clone git@github.com:https://github.com/mpa-mxiang/Hello-Microverse.git
+  git clone git@github.com:https://github.com/mpa-mxiang/profolio2.git
 
 
 ### Usage
